@@ -1,0 +1,187 @@
+<!-- partial-home.html -->
+
+<div class="">
+
+    <div class="row" style="margin-top: 10px;margin-left: 50px">
+
+        <div class="col-lg-6 col-md-6 col-sm-6" >
+            <button type="button" class="btn btn-blue btn-outlined btn-md" ng-click="showAddOne=true">
+                <span class="glyphicon glyphicon-plus"></span>添加老师
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- 添加区域 -->
+    <div class="row"
+         style="border: 1px solid #B9D4E4;margin:10px;padding: 10px;max-width: 1000px"
+         ng-if="showAddOne">
+        <br>
+        <div class="col-lg-5 col-md-5 col-sm-5">
+
+
+            老师姓名  <input  class="form-control"
+                          placeholder=""  ng-model="addEditData.realname">
+            登录名  <input  class="form-control"
+                          placeholder=""  ng-model="addEditData.username">
+            描述<textarea  class="form-control"
+                           placeholder=""  ng-model="addEditData.desc"> </textarea>
+            展示次序<input  class="form-control"
+                        placeholder=""  ng-model="addEditData.display_idx">
+
+        </div>
+
+        <div class="col-lg-7 col-md-7 col-sm-7">
+
+
+            <span>授课信息</span>
+            <br>
+            <div class="row" >
+                <div class="col-lg-10 col-md-10 col-sm-10" style="margin-top: 10px">
+                    <select style='min-width: 200px;' ng-model="$parent.courseSelected"
+                            ng-options="course as course.name for course in courseList">
+                    </select>&nbsp;
+
+                    <button type="button" class="btn btn-green btn-outlined btn-xs" ng-click="addEditData.addTeachCourse()" >
+                        <i class="fa fa-plus"></i></button>
+                </div>
+
+
+            </div>
+
+            <div class="row" >
+                <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px">
+                    <button class="btn btn-blue btn-outlined btn-xs" style="margin-left: 5px"
+                            ng-repeat="course in addEditData.courses"
+                            ng-click="addEditData.delTeachCourse(course)">
+                        {{course.name}} &nbsp; X
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px">
+            <button type="button" class="btn btn-green btn-outlined btn-xs" ng-click="addOne()" >
+                确定</button>
+            <button type="button" class="btn btn-green btn-outlined btn-xs" ng-click="$parent.showAddOne=false" >
+                取消</button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row col-lg-12 col-md-12 col-sm-12"  ng-if="theList.length>0">
+
+        <table class="table table-hover table-striped table-bordered table-advanced tablesorter" >
+            <thead>
+            <tr>
+
+                <th width="8%" style="text-align:center">次序</th>
+                <th width="10%" style="text-align:center">姓名</th>
+                <th width="10%" style="text-align:center">登录名</th>
+                <th width="20%" style="text-align:center">描述</th>
+                <th width="32%" style="text-align:center">授课信息</th>
+                <th width="20%" style="text-align:center">操作</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr dir-paginate="one in theList| itemsPerPage: pageSize" total-items="totalNum" current-page="$parent.currentPage">
+
+                <td style="text-align:center">
+                    <span ng-if="!one.editing">{{one.display_idx}}</span>
+                    <input ng-if="one.editing" ng-model="addEditData.display_idx"
+                           style="max-width: 60px">
+                </td>
+
+                <td style="text-align:center">
+                    <span ng-if="!one.editing">{{one.realname}}</span>
+                    <input ng-if="one.editing" ng-model="addEditData.realname"
+                           style="max-width: 90px">
+                </td>
+                <td style="text-align:center">
+                    <span ng-if="!one.editing">{{one.username}}</span>
+                    <input ng-if="one.editing" ng-model="addEditData.username"
+                           style="max-width: 90px">
+                </td>
+                <td style="text-align:center">
+                    <p ng-if="!one.editing">{{one.desc}}</p>
+                    <textarea ng-if="one.editing" ng-model="addEditData.desc" ></textarea>
+                </td>
+
+                <!--授课信息-->
+                <td style="text-align:center">
+
+                    <div ng-if="!one.editing">
+                        <span ng-repeat="course in one.courses" style="margin-left: 5px"
+                              class="btn btn-green btn-outlined btn-xs">
+                        {{course.name}}</span>
+                    </div>
+
+                    <div ng-if="one.editing" >
+
+                        <div class="row" >
+                            <div class="col-lg-12 col-md-12 col-sm-12" >
+                                <select style='min-width: 100px;' ng-model="$parent.$parent.$parent.courseSelected"
+                                        ng-options="course as course.name for course in courseList">
+                                </select>&nbsp;
+
+                                <button type="button" class="btn btn-green btn-outlined btn-xs" ng-click="addEditData.addTeachCourse()" >
+                                    <i class="fa fa-plus"></i></button>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row" >
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px">
+                                <button class="btn btn-blue btn-outlined btn-xs" style="margin-left: 5px"
+                                        ng-repeat="course in addEditData.courses"
+                                        ng-click="addEditData.delTeachCourse(course)">
+                                    {{course.name}} &nbsp; X
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </td>
+
+
+                <td style="text-align:center">
+                    <button type="button" class="btn btn-green btn-outlined btn-xs"
+                            ng-click="editOneBegin(one)" ng-if="!one.editing">
+                        编辑
+                    </button>
+                    <button type="button" class="btn btn-green btn-outlined btn-xs"
+                                           ng-click="delOne(one)" ng-if="!one.editing">
+                        删除
+                    </button>
+                    <button type="button" class="btn btn-red btn-outlined btn-xs"
+                            ng-click="editOneSubmit(one)" ng-if="one.editing">
+                        确定</button>
+                    <button type="button" class="btn btn-red btn-outlined btn-xs"
+                            ng-click="editOneCancel(one)" ng-if="one.editing">
+                        取消</button>
+                </td>
+
+            </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="note note-success" ng-if="theList.length==0" >
+        <h4 class="box-heading">没有查询到老师信息</h4>
+    </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 " style="text-align: center;font-family: 'Microsoft YaHei';font-size: medium;">
+            <dir-pagination-controls boundary-links="true" on-page-change="pageChangeTo(newPageNumber)"></dir-pagination-controls>
+        </div>
+
+    </div>
+</div>

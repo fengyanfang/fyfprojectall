@@ -1,0 +1,171 @@
+/*video {*/
+    /*position: fixed;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*z-index: -100;*/
+    /*/!*background: url('polina.jpg') no-repeat;*!/*/
+    /*background-size: cover;*/
+/*}*/
+body{
+    background: url('/jojo_cdn/login/teacher/image/77.png') center center fixed;
+    /*background-color: #18584f;*/
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.tupian{
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -90;
+}
+
+#teacher-page {
+    /*background: url('/jojo_cdn/teacherlogin/image/11222.jpg') center center fixed;*/
+    /*-moz-background-size: cover;*/
+    /*-webkit-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    /*padding: 5px;*/
+    /*height: 100%;*/
+    position: absolute;
+    height:100%;
+    width:100%
+
+}
+
+
+form {
+    position: relative;
+    width: 305px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
+
+input {
+    width: 270px;
+    height: 42px;
+    line-height:42px;
+    margin-top: 25px;
+    padding: 0 15px;
+    background: #2d2d2d; /* browsers that don't support rgba */
+    *background-color:transparent;
+    background: rgba(45,45,45,.15);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #3d3d3d; /* browsers that don't support rgba */
+    border: 1px solid rgba(255,255,255,.15);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+input:-moz-placeholder { color: #fff; }
+input:-ms-input-placeholder { color: #fff; }
+input::-webkit-input-placeholder { color: #fff; }
+
+input:focus {
+    outline: none;
+    -moz-box-shadow:
+    0 2px 3px 0 rgba(0,0,0,.1) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 2px 3px 0 rgba(0,0,0,.1) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+    0 2px 3px 0 rgba(0,0,0,.1) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+button#submit {
+    cursor: pointer;
+    width: 270px;
+    height: 44px;
+    margin-top: 25px;
+    padding: 0;
+    background: #1278bf;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 0px;
+    -moz-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.25) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.25) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.25) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+#submit:hover {
+    -moz-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+button:active {
+    -moz-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+    0 5px 8px 0 rgba(0,0,0,.1) inset,
+    0 1px 4px 0 rgba(0,0,0,.1);
+
+    border: 0px solid #00ef99;
+}
+
+
+#reg-for ul{
+    width:300px;
+    height:50px;
+    margin-top: 20px;;
+}
+#reg-for ul li{
+    list-style: none;
+    float: left;
+    width: 80px;
+    height:25px;
+    border: 1px solid #ffffff;
+    line-height: 22px;
+    margin-right: 30px;
+    border-radius: 5px;;
+}

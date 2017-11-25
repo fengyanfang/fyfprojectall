@@ -1,0 +1,14 @@
+# will match everything that starts with a dot and is a folder
+.**/
+
+*.pyc
+*.bak
+*.pid
+*.log*
+migrations/
+log/
+workspace.xml
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.sqlite3

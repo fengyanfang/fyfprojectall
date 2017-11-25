@@ -1,0 +1,23 @@
+#coding:utf8
+
+def isalary():
+    with open(u"F:/file1.txt","r") as fp,open(u"information.txt","w") as fi:
+            f = fp.read()
+            f =f.splitlines()
+
+            for one in f:
+                one = one.strip()
+                #如果是空行，跳过
+                if one == "":
+                    continue
+                if one.count(";") != 1:
+                    continue
+                namepart,salarypart = one.split(";")
+                salary = int(salarypart.split(":")[1].strip())
+                name = namepart.split(":")[1].strip()
+                tax = int(salary*0.1)
+                incom = int(salary*0.9)
+
+                co = "name : %-10s,salary : %-10s,tax : %-10d, incom : %-10d\n"%(name,salary,tax,incom)
+                fi.write(co)
+isalary()

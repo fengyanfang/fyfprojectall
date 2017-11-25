@@ -1,0 +1,21 @@
+
+i_list=[6,3,7,9]
+
+def nu_sort(inlist):
+    newlist = []
+    while len(inlist) > 0:
+        themin = inlist[0]
+        minidx = 0
+        idx = 0
+        for one in inlist:
+            if themin > one:
+                themin = one
+                minidx = idx
+            idx += 1
+        inlist.pop(minidx)
+        newlist.append(themin)
+    print newlist
+
+
+
+nu_sort(i_list)

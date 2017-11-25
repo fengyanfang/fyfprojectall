@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FrameApp">
+
+<head>
+    <title>首次登录</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="Thu, 19 Nov 1900 08:52:00 GMT">
+
+    <!--360浏览器使用极速模式-->
+    <meta name="renderer" content="webkit">
+
+
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/vendors/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/vendors/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/vendors/bootstrap3-dialog/css/bootstrap-dialog.min.css">
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/stylelib/css/themes/style1/teacher.css"  >
+
+
+    <style>
+        body, html {
+            font-family: "Microsoft Yahei", Arial;
+        }
+        .modal-dialog {
+            z-index: 1060;
+            margin: 80px auto;
+        }
+
+    </style>
+</head>
+
+
+<body class="sidebar-colors header-fixed" ng-cloak="" >
+
+<div class="page-content">
+    <div class="row" style="margin-top: 100px">
+        <div class="col-lg-3 col-md-3 col-sm-3"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="panel panel-green" style="max-width: 600px">
+                <div class="panel-heading">首次登录，请修改密码</div>
+                <div class="panel-body pan">
+                    <form method="post"  autocomplete="off" class="form-horizontal" id="frs-form">
+                        <div class="form-body pal">
+
+                            <div class="form-group">
+                                <label for="oldPassword" class="col-lg-3 col-md-3 col-sm-3 control-label">当前密码</label>
+                                <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <div class="input-icon right">
+                                        <i class="fa fa-lock"></i>
+                                        <input id="oldPassword" name="oldPassword" type="password" maxlength="20" placeholder="" class="form-control">
+                                    </div>
+                                    <!--<span class="help-block mbn"><a href="#"><small>Forgot password?</small></a></span>-->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-lg-3 col-md-3 col-sm-3 control-label">新密码</label>
+                                <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <div class="input-icon right">
+                                        <i class="fa fa-lock"></i>
+                                        <input id="inputPassword" name="inputPassword" type="password" maxlength="20" placeholder="" class="form-control">
+                                    </div>
+                                    <!--<span class="help-block mbn"><a href="#"><small>Forgot password?</small></a></span>-->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword" class="col-lg-3 col-md-3 col-sm-3 control-label">确认新密码</label>
+                                <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <div class="input-icon right">
+                                        <i class="fa fa-lock"></i>
+                                        <input id="confirmPassword" name="confirmPassword" type="password" maxlength="20" placeholder="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-actions pal">
+                            <div class="form-group mbn">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <button type="submit" class="btn btn-primary" onclick="firstChangePasswd()">确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3"></div>
+    </div>
+</div>
+
+<script src="/jojo_cdn/vendors/jquery/jquery.min.js"></script>
+<!--<script src="/jojo_cdn/stylelib/js/jquery-migrate-1.2.1.min.js"></script>-->
+<!--<script src="//libs.baidu.com/jqueryui/1.10.2/jquery-ui.min.js"></script>-->
+
+<script src="/jojo_cdn/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+
+<script src="/jojo_cdn/vendors/jquery-validate/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="/jojo_cdn/jslib/bootstrap/bootstrap-dialog.min.cn.js"></script>
+<script type="text/javascript" src="/jojo_cdn/jslib/csrf.js"></script>
+<script type="text/javascript">needCsrfCookie(encodeURIComponent(window.location.pathname));</script>
+
+<script type="text/javascript" >
+
+    $("#frs-form").submit(function(e){
+        return false;
+    });
+
+    function firstChangePasswd(){
+
+        var ret = $("#frs-form").valid();
+        if (!ret)  return;
+
+        var oldPassword = encodeURIComponent($('#oldPassword').val());
+        var newPassword = encodeURIComponent($('#inputPassword').val());
+        var confirmPassword = encodeURIComponent($('#confirmPassword').val());
+
+        $.ajax({
+            //提交的网址
+            url:  '/api/teacher/yj_teachers/',
+            type: 'PUT',
+            data: 'action=changeuserpassword&oldpassword='+oldPassword +'&newpassword=' + newPassword,
+
+            //成功返回之后调用的函数
+            success: function(ret) {
+
+                if (ret.retcode==0) {
+                    BootstrapDialog.alert("修改成功，点击确定，使用新密码重新登录 ", function(){
+                        window.location.href = '/teacher/login/login.html';
+                    } )
+                } else {
+                    BootstrapDialog.alert("修改密码失败 : " + ret.reason);
+                    $("#inputPassword").val("");
+                    $("#confirmPassword").val("");
+                }
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+                BootstrapDialog.alert('错误: ' + xhr.status + thrownError)
+            }
+        });
+    }
+
+    //禁止空格输入
+    $("input").keydown(function(event){
+        if(event.which===32) return false;
+    });
+
+
+
+
+    $("#frs-form").validate(
+    {
+        // Rules for form validation
+        rules:
+        {
+
+            oldPassword:
+            {
+                required: true,
+                minlength: 6,
+                maxlength: 20
+            },
+            inputPassword:
+            {
+                required: true,
+                minlength: 6,
+                maxlength: 20
+            },
+            confirmPassword:
+            {
+                required: true,
+                minlength: 6,
+                maxlength: 20,
+                equalTo: '#inputPassword'
+            },
+        },
+
+        // Messages for form validation
+        messages:
+        {
+
+
+            oldPassword:
+            {
+                required: '请输入您的密码',
+                minlength: jQuery.validator.format("密码至少 {0} 个字符!"),
+                maxlength: jQuery.validator.format("密码最多 {0} 个字符!")
+            },
+            inputPassword:
+            {
+                required: '请输入新的密码',
+                minlength: jQuery.validator.format("密码至少 {0} 个字符!"),
+                maxlength: jQuery.validator.format("密码最多 {0} 个字符!")
+            },
+            confirmPassword:
+            {
+                required: '请再输入一次密码，以便确认',
+                equalTo: '确认密码必须和新密码一致',
+                minlength: jQuery.validator.format("确认密码至少 {0} 个字符!"),
+                maxlength: jQuery.validator.format("确认密码最多 {0} 个字符!")
+            }
+        },
+
+        // Do not change code below
+        errorPlacement: function(error, element)
+        {
+            error.insertAfter(element.parent());
+        },
+
+    });
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

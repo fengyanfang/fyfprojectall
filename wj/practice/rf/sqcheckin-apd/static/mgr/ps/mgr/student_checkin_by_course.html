@@ -1,0 +1,95 @@
+<!-- partial-home.html -->
+
+<div class="">
+
+    <div class="row" style="margin-top: 10px;margin-left: 50px">
+
+        <!-- 过滤条件 -->
+        <div class="col-lg-12 col-md-12 col-sm-12" >
+           
+
+                <span class="glyphicon glyphicon-filter" style="margin-right: 10px"></span>
+
+                课程
+                <select style='min-width: 100px;margin-right: 3em' ng-model="filter.course_id"
+                        ng-options="course.id as course.name for course in courseList"
+                        ng-change="tryToShowCheckinList(1)">
+                </select>
+                
+                    
+                开始时间 <input type="date" ng-model="filter.starttime"
+                            style="line-height: initial;" placeholder="yyyy-MM-dd"
+                            ng-change="tryToShowCheckinList(1)" />
+
+                结束时间 <input type="date" ng-model="filter.endtime"
+                            style="line-height: initial" placeholder="yyyy-MM-dd"
+                        ng-change="tryToShowCheckinList(1)" />
+
+        </div>
+
+    </div>
+
+
+    <br><br>
+
+    <div class="row col-lg-12 col-md-12 col-sm-12"  ng-if="theList.length>0">
+
+        <div class="note note-success" ng-if="checkinRate" >
+            <h4 class="box-heading" style="color: palevioletred">{{checkinRate}}</h4>
+        </div>
+
+        <table class="table table-hover table-striped table-bordered table-advanced tablesorter" >
+            <thead>
+            <tr>
+
+                <th width="35%" style="text-align:center">课程</th>
+                <th width="25%" style="text-align:center">开始时间</th>
+                <th width="25%" style="text-align:center">结束时间</th>
+                <th width="15%" style="text-align:center">签到情况</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr dir-paginate="one in theList| itemsPerPage: pageSize" total-items="totalNum" current-page="$parent.currentPage">
+
+                <td style="text-align:center">
+                    <span >{{one.desc}}</span>
+                </td>
+
+                <td style="text-align:center">
+                    <span >{{one.starttime.toLocaleString('zh-CN' ,{ hour12: false })}}</span>
+                </td>
+
+                <td style="text-align:center">
+                    <span >{{one.endtime.toLocaleString('zh-CN',{ hour12: false })}}</span>
+                </td>
+
+
+                <td style="text-align:center">
+                    <span ng-if="one.ci"><i class="fa fa-check" style="font-size: large;color:green"></i></span>
+                </td>
+
+
+
+
+            </tr>
+            </tbody>
+
+        </table>
+
+
+        <div class="col-lg-12 col-md-12 col-sm-12 " style="text-align: center;font-family: 'Microsoft YaHei';font-size: medium;">
+            <dir-pagination-controls boundary-links="true" on-page-change="tryToShowCheckinList(newPageNumber)"></dir-pagination-controls>
+        </div>
+
+
+    </div>
+
+    <div class="note note-success" ng-if="theList.length==0" >
+        <h4 class="box-heading">没有查询到课时信息</h4>
+    </div>
+
+
+</div>
+</div>

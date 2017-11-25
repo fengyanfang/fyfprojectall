@@ -1,0 +1,48 @@
+<!-- partial-home.html -->
+
+<div class="">
+
+    <div class="row" style="margin-top:50px">
+            <label  class="col-lg-2 col-md-2 col-sm-2" >当前密码<span class="require">*</span>
+            </label>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="input-icon right">
+
+                    <input type="password" autocomplete="off" autocorrect="off"
+                           required maxlength="20" class="form-control" ng-model="MyPassWord" onkeyup="value=value.replace(/^ +| +$/g,'')"/>
+                </div>
+            </div>
+    </div>
+
+    <div class="row" style="margin-top:30px">
+            <label  class="col-lg-2 col-md-2 col-sm-2" >新密码<span class="require" >*</span>
+            </label>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="input-icon right">
+
+                    <input type="password" placeholder="" class="form-control"
+                           required maxlength="20"  ng-model="MyNewPassWord1" onkeyup="value=value.replace(/^ +| +$/g,'')"/>
+                </div>
+            </div>
+    </div>
+
+    <div class="row" style="margin-top:30px">
+            <label  class="col-lg-2 col-md-2 col-sm-2" >确认密码<span class="require">*</span>
+            </label>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="input-icon right">
+                    <input type="password" placeholder="" class="form-control"
+                           required maxlength="20" ng-model="MyNewPassWord2"  onkeyup="value=value.replace(/^ +| +$/g,'')"/>
+                    <!--onkeyup="value=value.replace(/^[\w\u4e00-\u9fa5]+$/gi,'')"-->
+                </div>
+            </div>
+    </div>
+
+    <div class="row" style="margin-top:30px">
+            <div class="col-lg3 col-md-3 col-sm-3">
+                <button type="button" style="float: right;" class="btn btn-orange" ng-click="modifyPassword();">确定</button>&nbsp;
+            </div>
+    </div>
+
+
+</div>

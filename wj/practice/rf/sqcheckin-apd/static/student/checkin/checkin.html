@@ -1,0 +1,68 @@
+<h3>课 - 签到</h3>
+<div id="div-home" class="mbl">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12"  ng-if="theList.length>0">
+
+        <table class="table table-hover table-striped table-bordered table-advanced tablesorter"
+                style="margin-top: 10px">
+            <thead>
+            <tr>
+
+                <th width="20%" style="text-align:center">课程</th>
+                <th width="20%" style="text-align:center">开始时间</th>
+                <th width="20%" style="text-align:center">结束时间</th>
+                <th width="30%" style="text-align:center">备注</th>
+                <th width="10%" style="text-align:center">操作</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr dir-paginate="one in theList| itemsPerPage: pageSize" >
+
+                <td style="text-align:center">
+                    <span>{{one.course__name}}</span>
+                </td>
+
+                <td style="text-align:center">
+                    <span >{{one.starttime.toLocaleString('zh-CN' ,{ hour12: false })}}</span>
+                </td>
+
+                <td style="text-align:center">
+                    <span>{{one.endtime.toLocaleString('zh-CN',{ hour12: false })}}</span>
+                </td>
+
+
+                <td style="text-align:center">
+                    <p>{{one.desc}}</p>
+                </td>
+
+
+
+                <td style="text-align:center">
+                    <button type="button" class="btn btn-green btn-outlined btn-xs"
+                            ng-click="checkin(one)" >
+                        签到
+                    </button>
+                </td>
+
+            </tr>
+            </tbody>
+
+        </table>
+
+
+        <div class="col-lg-12 col-md-12 col-sm-12 " style="text-align: center;font-family: 'Microsoft YaHei';font-size: medium;">
+            <dir-pagination-controls boundary-links="true" ></dir-pagination-controls>
+        </div>
+
+    </div>
+
+    <div class="note note-success" ng-if="theList.length==0" >
+        <h4 class="box-heading">当前没有需要签到的课</h4>
+    </div>
+
+
+</div>
+

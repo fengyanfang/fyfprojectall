@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170628 13:23:55.824" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\classes\class\rf\less1\tc" id="s1" name="Tc">
+<suite source="C:\classes\class\rf\less1\tc\Web测试" id="s1-s1" name="Web测试">
+<kw type="setup" name="OpenBrowser">
+<msg timestamp="20170628 13:23:56.011" level="FAIL">No keyword with name 'OpenBrowser' found.</msg>
+<status status="FAIL" endtime="20170628 13:23:56.011" starttime="20170628 13:23:56.011"></status>
+</kw>
+<suite source="C:\classes\class\rf\less1\tc\Web测试\管理员操作" id="s1-s1-s1" name="管理员操作">
+<suite source="C:\classes\class\rf\less1\tc\Web测试\管理员操作\老师管理" id="s1-s1-s1-s1" name="老师管理">
+<suite source="C:\classes\class\rf\less1\tc\Web测试\管理员操作\老师管理\添加老师.robot" id="s1-s1-s1-s1-s1" name="添加老师">
+<test id="s1-s1-s1-s1-s1-t1" name="添加老师">
+<status status="FAIL" endtime="20170628 13:23:56.089" critical="yes" starttime="20170628 13:23:56.074">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</test>
+<status status="FAIL" endtime="20170628 13:23:56.105" starttime="20170628 13:23:56.058">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</suite>
+<status status="FAIL" endtime="20170628 13:23:56.152" starttime="20170628 13:23:56.043">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</suite>
+<suite source="C:\classes\class\rf\less1\tc\Web测试\管理员操作\课程管理" id="s1-s1-s1-s2" name="课程管理">
+<suite source="C:\classes\class\rf\less1\tc\Web测试\管理员操作\课程管理\添加课程.robot" id="s1-s1-s1-s2-s1" name="添加课程">
+<test id="s1-s1-s1-s2-s1-t1" name="添加课程">
+<status status="FAIL" endtime="20170628 13:23:56.265" critical="yes" starttime="20170628 13:23:56.250">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</test>
+<status status="FAIL" endtime="20170628 13:23:56.292" starttime="20170628 13:23:56.222">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</suite>
+<status status="FAIL" endtime="20170628 13:23:56.324" starttime="20170628 13:23:56.183">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</suite>
+<status status="FAIL" endtime="20170628 13:23:56.371" starttime="20170628 13:23:56.011">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</suite>
+<kw type="teardown" name="CloseBrowser">
+<msg timestamp="20170628 13:23:56.402" level="FAIL">No keyword with name 'CloseBrowser' found.</msg>
+<status status="FAIL" endtime="20170628 13:23:56.402" starttime="20170628 13:23:56.402">No keyword with name 'CloseBrowser' found.</status>
+</kw>
+<status status="FAIL" endtime="20170628 13:23:56.402" starttime="20170628 13:23:55.933">Suite setup failed:
+No keyword with name 'OpenBrowser' found.
+
+Also suite teardown failed:
+No keyword with name 'CloseBrowser' found.</status>
+</suite>
+<status status="FAIL" endtime="20170628 13:23:56.449" starttime="20170628 13:23:55.839"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Tc" pass="0">Tc</stat>
+<stat fail="2" id="s1-s1" name="Web测试" pass="0">Tc.Web测试</stat>
+<stat fail="2" id="s1-s1-s1" name="管理员操作" pass="0">Tc.Web测试.管理员操作</stat>
+<stat fail="1" id="s1-s1-s1-s1" name="老师管理" pass="0">Tc.Web测试.管理员操作.老师管理</stat>
+<stat fail="1" id="s1-s1-s1-s1-s1" name="添加老师" pass="0">Tc.Web测试.管理员操作.老师管理.添加老师</stat>
+<stat fail="1" id="s1-s1-s1-s2" name="课程管理" pass="0">Tc.Web测试.管理员操作.课程管理</stat>
+<stat fail="1" id="s1-s1-s1-s2-s1" name="添加课程" pass="0">Tc.Web测试.管理员操作.课程管理.添加课程</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170628 13:23:55.964" level="ERROR">Error in file 'C:\classes\class\rf\less1\tc\Web测试': Importing test library 'pylib.WebOp' failed: ImportError: No module named sele
+Traceback (most recent call last):
+  File "C:\classes\class\rf\less1\pylib\WebOp.py", line 2, in &lt;module&gt;
+    from sele import webdriver
+PYTHONPATH:
+  C:\classes\class\rf\less1
+  C:\WINDOWS\SYSTEM32\python27.zip
+  c:\python27\DLLs
+  c:\python27\lib
+  c:\python27\lib\plat-win
+  c:\python27\lib\lib-tk
+  c:\python27
+  c:\python27\lib\site-packages
+  c:\python27\lib\site-packages\win32
+  c:\python27\lib\site-packages\win32\lib
+  c:\python27\lib\site-packages\Pythonwin
+  c:\python27\lib\site-packages\wx-2.8-msw-unicode</msg>
+</errors>
+</robot>

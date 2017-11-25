@@ -1,0 +1,15 @@
+设计一个函数，名为getName，如下所示，
+def getName(srcStr):
+    函数体
+
+该函数分析参数字符串srcStr，将其中的人名获取出来，
+参数字符串 一个例子 如下所示
+
+A girl come in, the name is Jack, level 955;
+
+其中包含的句子 the name is 后面会跟着人名，随后紧跟一个逗号， 这是固定的格式。
+其它部分可能都是会变化的，比如参数可能是下面这些
+A old lady come in, the name is Mary, level 94454
+A pretty boy come in, the name is Patrick, level 194
+
+请大家定义好函数后， 存在一个文件中，文件名为你的 题目编号(这次是0001)_城市_名字 (比如 0001_深圳_李霞.py ) QQ发给江老师

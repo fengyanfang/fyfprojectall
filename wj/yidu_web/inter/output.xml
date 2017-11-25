@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170819 18:53:36.474" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\classes\yidu_web\inter\tci" id="s1" name="Tci">
+<suite source="C:\classes\yidu_web\inter\tci\ydyc" id="s1-s1" name="Ydyc">
+<suite source="C:\classes\yidu_web\inter\tci\ydyc\用车流程.robot" id="s1-s1-s1" name="用车流程">
+<test id="s1-s1-s1-t1" name="列出优惠券">
+<kw name="List Coupon" library="pylib.yongche">
+<assign>
+<var>${ret}</var>
+</assign>
+<msg timestamp="20170819 18:53:38.802" level="INFO">{u'status': 0, u'msg': u'', u'data': [{u'status': u'0', u'code': None, u'description': u'', u'validtime': u'1503849599', u'money': u'20', u'use_type': u'1', u'time_status': 0, u'btime': u'0', u'use_limit': u'0', u'uid': u'1192', u'type': u'1', u'id': u'21590', u'act_name': u'p\u7aef\u8d60\u9001\u4f18\u60e0\u5238', u'name': u'\u4e00\u5ea6\u7528\u8f66\u4f18\u60e0\u5238'}]}</msg>
+<msg timestamp="20170819 18:53:38.803" level="INFO">${ret} = {u'status': 0, u'msg': u'', u'data': [{u'status': u'0', u'code': None, u'description': u'', u'validtime': u'1503849599', u'money': u'20', u'use_type': u'1', u'time_status': 0, u'btime': u'0', u'use_li...</msg>
+<status status="PASS" endtime="20170819 18:53:38.803" starttime="20170819 18:53:38.444"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret['status']==0</arg>
+</arguments>
+<status status="PASS" endtime="20170819 18:53:38.807" starttime="20170819 18:53:38.805"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>$ret['data'][0]['uid']==1192</arg>
+</arguments>
+<msg timestamp="20170819 18:53:38.809" level="FAIL">Keyword 'BuiltIn.Should Be Equal' expected 2 to 5 arguments, got 1.</msg>
+<status status="FAIL" endtime="20170819 18:53:38.809" starttime="20170819 18:53:38.808"></status>
+</kw>
+<status status="FAIL" endtime="20170819 18:53:38.810" critical="yes" starttime="20170819 18:53:38.438">Keyword 'BuiltIn.Should Be Equal' expected 2 to 5 arguments, got 1.</status>
+</test>
+<status status="FAIL" endtime="20170819 18:53:38.820" starttime="20170819 18:53:36.729"></status>
+</suite>
+<status status="FAIL" endtime="20170819 18:53:38.826" starttime="20170819 18:53:36.683"></status>
+</suite>
+<status status="FAIL" endtime="20170819 18:53:38.832" starttime="20170819 18:53:36.507"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Tci" pass="0">Tci</stat>
+<stat fail="1" id="s1-s1" name="Ydyc" pass="0">Tci.Ydyc</stat>
+<stat fail="1" id="s1-s1-s1" name="用车流程" pass="0">Tci.Ydyc.用车流程</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

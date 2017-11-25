@@ -1,0 +1,136 @@
+
+<div class="">
+
+
+    <div class="row" style="margin-top: 10px;margin-left: 50px">
+
+        <div class="col-lg-12 col-md-12 col-sm-12" >
+            <div class="col-lg-2 col-md-2 col-sm-2" >
+                <button type="button" class="btn btn-blue btn-outlined btn-sm" ng-click="showAddOne=true">
+                    <span class="glyphicon glyphicon-plus"></span>添加学生
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 添加区域 -->
+    <div class="row"
+         style="border: 1px solid #B9D4E4;margin:5px 0;padding: 10px;max-width: 1000px"
+         ng-if="showAddOne">
+        <br>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+
+            <form>
+
+            学生姓名  <input  class="form-control"
+                          placeholder=""  ng-model="addEditData.realname">
+            登录名  <input  class="form-control"
+                          placeholder=""  ng-model="addEditData.username">
+            密码    <input  class="form-control"
+                           placeholder=""  ng-model="addEditData.password">
+            </form>
+
+        </div>
+
+
+
+        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px">
+            <button type="button" class="btn btn-green btn-outlined btn-xs" ng-click="addOne()" >
+                确定</button>
+            <button type="button" class="btn btn-green btn-outlined btn-xs" ng-click="$parent.showAddOne=false" >
+                取消</button>
+        </div>
+    </div>
+
+    <br>
+
+
+
+    <div ng-if="theList.length>0" class="col-lg-12 col-md-12 col-sm-12"  >
+
+        <table class="table table-hover table-striped table-bordered table-advanced tablesorter" >
+            <thead>
+            <tr>
+
+                <th width="10%" style="text-align:center">姓名</th>
+                <th width="10%" style="text-align:center">登录名</th>
+                <th width="30%" style="text-align:center">操作</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr dir-paginate="one in theList| itemsPerPage: pageSize" total-items="totalNum" current-page="$parent.currentPage">
+
+
+                <td style="text-align:center">
+                    <span ng-if="!one.editing">{{one.realname}}</span>
+                    <input ng-if="one.editing" ng-model="addEditData.realname"
+                           style="max-width: 90px">
+                </td>
+                <td style="text-align:center">
+                    <span ng-if="!one.editing">{{one.username}}</span>
+                    <input ng-if="one.editing" ng-model="addEditData.username"
+                           style="max-width: 90px">
+                </td>
+
+
+
+
+
+                <td style="text-align:center">
+                    <button type="button" class="btn btn-green btn-outlined btn-xs"
+                            ng-click="editOneBegin(one)" ng-if="!one.editing">
+                        编辑
+                    </button>
+                    <button type="button" class="btn btn-green btn-outlined btn-xs"
+                                           ng-click="delOne(one)" ng-if="!one.editing">
+                        删除
+                    </button>
+                    <button type="button" class="btn btn-red btn-outlined btn-xs"
+                            ng-click="editOneSubmit(one)" ng-if="one.editing">
+                        确定</button>
+                    <button type="button" class="btn btn-red btn-outlined btn-xs"
+                            ng-click="editOneCancel(one)" ng-if="one.editing">
+                        取消</button>
+
+                    <!--<button type="button" class="btn btn-green btn-outlined btn-xs"-->
+                            <!--ng-click="showCheckins(one)" ng-if="!one.editing">-->
+                        <!--签到记录-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn btn-green btn-outlined btn-xs"-->
+                            <!--ng-click="showCheckinsByCourse(one)" ng-if="!one.editing">-->
+                        <!--签到率-->
+                    <!--</button>-->
+                </td>
+
+            </tr>
+            </tbody>
+
+        </table>
+
+
+        <div class="note note-success" ng-if="theList.length==0" >
+            <h4 class="box-heading">没有查询到学生信息</h4>
+        </div>
+
+    </div>
+
+
+    <div ng-if="theList.length>0" class="row" style="text-align: center;font-family: 'Microsoft YaHei';font-size: medium;">
+        <dir-pagination-controls boundary-links="true" on-page-change="pageChangeTo(newPageNumber)"></dir-pagination-controls>
+    </div>
+
+
+
+    <div class="note note-success" ng-if="theList.length==0" >
+        <h4 class="box-heading">没有查询到学生信息</h4>
+    </div>
+
+
+</div>
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>管理员登录</title>
+    <meta charset="utf-8">
+    <!--<link rel="icon" href="/favicon.ico" type="image/x-icon" />-->
+    <!--<link rel="shortcut icon" href="/favicon.ico">-->
+    <!--<link rel="Bookmark" href="/favicon.ico">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="Thu, 19 Nov 1900 08:52:00 GMT">
+
+    <script src="/jojo_cdn/vendors/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/jojo_cdn/jslib/csrf.js"></script>
+    <script type="text/javascript">
+
+        needCsrfCookie();
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/vendors/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/vendors/bootstrap/css/bootstrap.min.css">
+
+
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/stylelib/css/themes/style1/mgr.css" class="default-style">
+
+    <style>
+        body {
+            font-family: "Microsoft Yahei",Arial ;
+            /*background-color: #EEEEEE;*/
+        }
+        .modal-dialog {
+            z-index: 1060;
+        }
+        #login-page{
+            background-image: url("/jojo_cdn/images/mgr/loginbg3.png");
+        }
+    </style>
+</head>
+
+<body id="login-page">
+    <div class="page-form">
+        <form action="index.html" class="form">
+            <div class="header-content">
+                <h1>管理员登录</h1>
+            </div>
+            <div class="body-content">
+
+                <div class="form-group">
+                    <div class="input-icon right"><i class="fa fa-user"></i>
+                        <input type="text" placeholder="用户名" name="username" id="username" class="form-control" onkeydown="on_return();">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon right"><i class="fa fa-key"></i>
+                        <input type="password" placeholder="密码" name="password" id="password" class="form-control" onkeydown="on_return();">
+                    </div>
+                </div>
+                <div class="form-group pull-left">
+                    <div class="checkbox-list">
+                        <!--<label>-->
+                            <!--<input type="checkbox">&nbsp; 保持登录状态</label>-->
+                    </div>
+                </div>
+                <div class="form-group pull-right">
+
+                    <button type="button" class="btn btn-success" onclick="postLoginRequest()" >登录 &nbsp;
+                        <i class="fa fa-chevron-circle-right"></i>
+                    </button>
+
+                </div>
+                <div class="clearfix"></div>
+
+                <hr>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+    <script src="/jojo_cdn/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/jojo_cdn/jslib/bootstrap/bootstrap-dialog.min.cn.js"></script>
+
+
+    <!--<script src="/jojo_cdn/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>-->
+    <!--<script src="/jojo_cdn/stylelib/js/html5shiv.js"></script>-->
+    <!--<script src="/jojo_cdn/stylelib/js/respond.min.js"></script>-->
+
+
+    <script>
+
+
+
+    function   getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+        var decodeuriStr = "%E4%BA%BF%E6%95%99%E4%BA%BF%E5%AD%A6%E7%89%88%E6%9D%83%E6%89%80%E6%9C%89";
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    }
+
+    // 初始化
+    $(function() {
+
+        var username = getUrlParameter('username');
+        if (username){
+            $('#username').val(username)
+        }
+    });
+
+    function postLoginRequest(){
+
+
+        $.ajax({
+            //提交的网址
+            url: '/api/mgr/loginReq',
+
+            type: 'POST',
+
+            data:
+            'username=' + encodeURIComponent($('#username').val()) +
+            '&password=' + encodeURIComponent($('#password').val()) ,
+
+            //成功返回之后调用的函数
+            success: function(ret) {
+
+                if (ret.retcode==0) {
+                    //window.location.href = '/mgr/ps/main.html?rname='+ret.realname;
+                    window.location.href = '/mgr/ps/mgr/index.html';
+
+                }
+                else {
+                    BootstrapDialog.alert("登录失败 : " + ret.reason)
+                }
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+
+
+                if(xhr.status !=0)
+                BootstrapDialog.alert('错误: ' + xhr.status + thrownError)
+            }
+        });
+    }
+
+
+    //Enter事件
+    function curTimestamp() {
+        var theDate = new Date().getTime();
+        return Math.floor(theDate / 1000);
+    }
+
+    var lastSendReqTime = 0;
+
+
+    document.onkeydown = function(event) {
+        var holder;
+        //IE uses this
+        if(window.event) {
+            holder = window.event.keyCode;
+        }
+        //FF uses this
+        else {
+            holder = event.which;
+        }
+        on_return(holder);
+    }
+
+
+    function on_return(key){
+
+        if(key == 13){
+
+            // 防止过快按回车， 限制2秒内，
+            var curTime = curTimestamp();
+            if ( (curTime-window.lastSendReqTime) < 5 ){
+                return;
+            }
+            window.lastSendReqTime = curTime;
+
+            postLoginRequest();
+        }
+    }
+
+    </script>
+
+</body>
+
+</html>

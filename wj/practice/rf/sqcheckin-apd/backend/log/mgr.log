@@ -1,0 +1,725 @@
+0514_21:50:30 !! op takes 0.171999931335 seconds : function:POST /api/mgr/sq_mgr/  
+0515_16:03:24 !! op takes 0.109999895096 seconds : function:DELETE /api/mgr/sq_mgr/  
+0515_16:32:38 !! op takes 0.107000112534 seconds : function:DELETE /api/mgr/sq_mgr/  
+0515_16:34:00 !! op takes 0.143999814987 seconds : function:POST /api/mgr/sq_mgr/  
+0515_16:34:20 !! op takes 0.174000024796 seconds : function:DELETE /api/mgr/sq_mgr/  
+0515_16:35:06 !! op takes 0.188999891281 seconds : function:POST /api/mgr/sq_mgr/  
+0515_16:35:20 !! op takes 0.417999982834 seconds : function:POST /api/mgr/sq_mgr/  
+0515_16:35:50 !! op takes 0.118999958038 seconds : function:POST /api/mgr/sq_mgr/  
+0515_16:35:54 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0515_16:36:02 !! op takes 0.182999849319 seconds : function:POST /api/mgr/sq_mgr/  
+0515_16:36:43 !! op takes 0.135999917984 seconds : function:DELETE /api/mgr/sq_mgr/  
+0515_16:36:44 !! op takes 0.171999931335 seconds : function:DELETE /api/mgr/sq_mgr/  
+0515_22:07:49 !! op takes 0.114000082016 seconds : function:DELETE /api/mgr/sq_mgr/  
+0515_22:07:58 !! op takes 0.109000205994 seconds : function:POST /api/mgr/sq_mgr/  
+0515_22:08:44 !! op takes 0.131999969482 seconds : function:POST /api/mgr/sq_mgr/  
+0515_22:08:55 !! op takes 0.105000019073 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_10:01:17 !! op takes 0.138999938965 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_10:06:02 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0516_10:06:12 !! op takes 0.184000015259 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_10:27:17 !! op takes 0.114000082016 seconds : function:POST /api/mgr/sq_mgr/  
+0516_10:27:27 !! op takes 0.141999959946 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_10:57:08 !! op takes 0.140000104904 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_11:07:03 !! op takes 0.108999967575 seconds : function:POST /api/mgr/sq_mgr/  
+0516_11:07:52 !! op takes 0.115999937057 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_11:08:18 !! op takes 0.172999858856 seconds : function:POST /api/mgr/sq_mgr/  
+0516_11:08:27 !! op takes 0.15299987793 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_16:15:48 !! op takes 0.100000143051 seconds : function:POST /api/mgr/sq_mgr/  
+0516_16:18:52 !! op takes 0.213999986649 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_16:28:08 !! op takes 0.121000051498 seconds : function:POST /api/mgr/sq_mgr/  
+0516_16:52:12 !! op takes 0.228999853134 seconds : function:POST /api/mgr/sq_mgr/  
+0516_16:56:11 !! op takes 0.112999916077 seconds : function:DELETE /api/mgr/sq_mgr/  
+0516_17:06:29 !! op takes 0.150000095367 seconds : function:POST /api/mgr/sq_mgr/  
+0516_23:09:56 !! op takes 0.113000154495 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_10:28:43 !! op takes 0.144999980927 seconds : function:POST /api/mgr/sq_mgr/  
+0517_10:28:46 !! op takes 0.108999967575 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_14:33:36 !! op takes 0.121999979019 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_14:54:25 !! op takes 0.134999990463 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_14:54:26 !! op takes 0.175999879837 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_14:54:29 !! op takes 0.15700006485 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_15:01:20 !! op takes 0.167000055313 seconds : function:POST /api/mgr/sq_mgr/  
+0517_15:02:14 !! op takes 0.118000030518 seconds : function:POST /api/mgr/sq_mgr/  
+0517_15:02:24 !! op takes 0.144999980927 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_15:10:04 !! op takes 0.162000179291 seconds : function:POST /api/mgr/sq_mgr/  
+0517_15:19:47 !! op takes 0.121999979019 seconds : function:POST /api/mgr/sq_mgr/  
+0517_15:20:22 !! op takes 0.171000003815 seconds : function:POST /api/mgr/sq_mgr/  
+0517_15:28:22 !! op takes 0.122000217438 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_16:09:29 !! op takes 0.131999969482 seconds : function:POST /api/mgr/sq_mgr/  
+0517_20:04:37 !! op takes 0.104000091553 seconds : function:POST /api/mgr/sq_mgr/  
+0517_20:29:23 !! op takes 0.121000051498 seconds : function:POST /api/mgr/sq_mgr/  
+0517_20:48:57 !! op takes 0.204999923706 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_20:48:59 !! op takes 0.103000164032 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_20:56:37 !! op takes 0.102999925613 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_20:57:10 !! op takes 0.125 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_21:00:24 !! op takes 0.108000040054 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_21:01:05 !! op takes 0.144999980927 seconds : function:POST /api/mgr/sq_mgr/  
+0517_21:25:14 !! op takes 0.128999948502 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_21:42:11 !! op takes 0.107000112534 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_21:44:28 !! op takes 0.121999979019 seconds : function:DELETE /api/mgr/sq_mgr/  
+0517_21:54:14 !! op takes 0.136999845505 seconds : function:POST /api/mgr/sq_mgr/  
+0517_21:54:26 !! op takes 0.138000011444 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_10:15:17 !! op takes 0.230999946594 seconds : function:POST /api/mgr/sq_mgr/  
+0518_14:33:47 !! op takes 0.105000019073 seconds : function:POST /api/mgr/sq_mgr/  
+0518_14:52:47 !! op takes 0.105000019073 seconds : function:POST /api/mgr/sq_mgr/  
+0518_14:52:51 !! op takes 0.176999807358 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_14:52:53 !! op takes 0.148000001907 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_15:21:14 !! op takes 0.171000003815 seconds : function:POST /api/mgr/sq_mgr/  
+0518_15:42:11 !! op takes 0.118999958038 seconds : function:POST /api/mgr/sq_mgr/  
+0518_15:45:48 !! op takes 0.118000030518 seconds : function:POST /api/mgr/sq_mgr/  
+0518_15:45:52 !! op takes 0.140999794006 seconds : function:POST /api/mgr/sq_mgr/  
+0518_15:48:27 !! op takes 0.139000177383 seconds : function:POST /api/mgr/sq_mgr/  
+0518_15:48:31 !! op takes 0.116999864578 seconds : function:POST /api/mgr/sq_mgr/  
+0518_16:02:06 !! op takes 0.125999927521 seconds : function:POST /api/mgr/sq_mgr/  
+0518_16:02:10 !! op takes 0.119000196457 seconds : function:POST /api/mgr/sq_mgr/  
+0518_16:02:29 !! op takes 0.118999958038 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_16:28:31 !! op takes 0.122000217438 seconds : function:POST /api/mgr/sq_mgr/  
+0518_16:28:36 !! op takes 0.117999792099 seconds : function:POST /api/mgr/sq_mgr/  
+0518_16:28:40 !! op takes 0.133999824524 seconds : function:POST /api/mgr/sq_mgr/  
+0518_16:29:41 !! op takes 0.124000072479 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_17:23:59 !! op takes 0.18499994278 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:44:43 !! op takes 0.121000051498 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:48:31 !! op takes 0.391999959946 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:48:38 !! op takes 0.117000102997 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:48:41 !! op takes 0.121000051498 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:49:08 !! op takes 0.153000116348 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_17:49:43 !! op takes 0.121000051498 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:49:47 !! op takes 0.121999979019 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:51:55 !! op takes 0.127999782562 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:51:59 !! op takes 0.125 seconds : function:POST /api/mgr/sq_mgr/  
+0518_17:52:03 !! op takes 0.116000175476 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_18:01:04 !! op takes 0.15499997139 seconds : function:POST /api/mgr/sq_mgr/  
+0518_18:01:08 !! op takes 0.113000154495 seconds : function:POST /api/mgr/sq_mgr/  
+0518_18:02:01 !! op takes 0.164000034332 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_20:26:54 !! op takes 0.194000005722 seconds : function:POST /api/mgr/sq_mgr/  
+0518_20:26:57 !! op takes 0.119999885559 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:00:59 !! op takes 0.139999866486 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:01:02 !! op takes 0.170000076294 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:05:37 !! op takes 0.130000114441 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:05:41 !! op takes 0.12299990654 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:05:45 !! op takes 0.112999916077 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_21:05:58 !! op takes 0.115000009537 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_21:16:27 !! op takes 0.219999790192 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:45:13 !! op takes 0.119999885559 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:45:17 !! op takes 0.125 seconds : function:POST /api/mgr/sq_mgr/  
+0518_21:45:34 !! op takes 0.15700006485 seconds : function:DELETE /api/mgr/sq_mgr/  
+0518_22:02:21 !! op takes 0.121999979019 seconds : function:POST /api/mgr/sq_mgr/  
+0518_22:02:24 !! op takes 0.207999944687 seconds : function:POST /api/mgr/sq_mgr/  
+0518_22:02:42 !! op takes 0.106999874115 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_09:03:18 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0519_09:04:05 !! op takes 0.111000061035 seconds : function:POST /api/mgr/sq_mgr/  
+0519_10:19:50 !! op takes 0.134000062943 seconds : function:POST /api/mgr/sq_mgr/  
+0519_10:28:12 !! op takes 0.115999937057 seconds : function:POST /api/mgr/sq_mgr/  
+0519_10:40:25 !! op takes 0.161000013351 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_11:17:33 !! op takes 0.144999980927 seconds : function:POST /api/mgr/sq_mgr/  
+0519_11:29:57 !! op takes 0.106999874115 seconds : function:POST /api/mgr/sq_mgr/  
+0519_17:23:36 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+
+0519_17:25:28 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+
+0519_17:27:22 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+
+0519_17:27:46 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+
+0519_17:27:50 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+
+0519_17:31:06 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+
+0519_17:32:10 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-1: invalid decimal Unicode string
+
+0519_20:42:19 !! op takes 0.108000040054 seconds : function:POST /api/mgr/sq_mgr/  
+0519_20:42:30 !! op takes 0.134999990463 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_20:52:53 !! op takes 0.209000110626 seconds : function:POST /api/mgr/sq_mgr/  
+0519_20:52:56 !! op takes 0.147000074387 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_21:34:21 !! op takes 0.117000102997 seconds : function:POST /api/mgr/sq_mgr/  
+0519_21:34:25 !! op takes 0.107000112534 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_21:34:34 !! op takes 0.117999792099 seconds : function:POST /api/mgr/sq_mgr/  
+0519_21:34:37 !! op takes 0.108000040054 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_21:39:55 !! op takes 0.151000022888 seconds : function:POST /api/mgr/sq_mgr/  
+0519_21:39:58 !! op takes 0.116999864578 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_21:45:51 !! op takes 0.102999925613 seconds : function:POST /api/mgr/sq_mgr/  
+0519_21:45:55 !! op takes 0.191999912262 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_21:46:03 !! op takes 0.101000070572 seconds : function:POST /api/mgr/sq_mgr/  
+0519_21:46:06 !! op takes 0.148000001907 seconds : function:DELETE /api/mgr/sq_mgr/  
+0519_21:50:52 !! op takes 0.125 seconds : function:POST /api/mgr/sq_mgr/  
+0520_15:39:08 !! op takes 0.130000114441 seconds : function:POST /api/mgr/sq_mgr/  
+0520_15:39:11 !! op takes 0.107000112534 seconds : function:POST /api/mgr/sq_mgr/  
+0520_15:39:16 !! op takes 0.110000133514 seconds : function:DELETE /api/mgr/sq_mgr/  
+0520_22:30:39 !! op takes 0.146000146866 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:12:18 !! op takes 0.190999984741 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:12:19 !! op takes 0.135999917984 seconds : function:DELETE /api/mgr/sq_mgr/  
+0520_23:26:31 !! op takes 0.108999967575 seconds : function:DELETE /api/mgr/sq_mgr/  
+0520_23:26:33 !! op takes 0.103999853134 seconds : function:DELETE /api/mgr/sq_mgr/  
+0520_23:41:33 !! op takes 0.118000030518 seconds : function:DELETE /api/mgr/sq_mgr/  
+0520_23:41:42 !! op takes 0.143000125885 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:43:06 !! op takes 0.15299987793 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:43:07 !! op takes 0.128000020981 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:45:27 !! op takes 0.119999885559 seconds : function:DELETE /api/mgr/sq_mgr/  
+0520_23:47:04 !! op takes 0.139999866486 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:48:18 !! op takes 0.195999860764 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:51:23 !! op takes 0.219999790192 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:51:24 !! op takes 0.120000123978 seconds : function:POST /api/mgr/sq_mgr/  
+0520_23:51:26 !! op takes 0.104000091553 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_09:21:39 !! op takes 0.123999834061 seconds : function:POST /api/mgr/sq_mgr/  
+0521_09:21:41 !! op takes 0.112999916077 seconds : function:POST /api/mgr/sq_mgr/  
+0521_09:21:44 !! op takes 0.131000041962 seconds : function:POST /api/mgr/sq_mgr/  
+0521_09:21:47 !! op takes 0.126999855042 seconds : function:POST /api/mgr/sq_mgr/  
+0521_09:21:59 !! op takes 0.115999937057 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_10:56:39 !! op takes 0.417999982834 seconds : function:POST /api/mgr/sq_mgr/  
+0521_10:56:41 !! op takes 0.176000118256 seconds : function:POST /api/mgr/sq_mgr/  
+0521_10:56:42 !! op takes 0.117000102997 seconds : function:POST /api/mgr/sq_mgr/  
+0521_10:56:50 !! op takes 0.151999950409 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_10:58:48 !! op takes 0.205000162125 seconds : function:POST /api/mgr/sq_mgr/  
+0521_10:58:50 !! op takes 0.167999982834 seconds : function:POST /api/mgr/sq_mgr/  
+0521_10:59:05 !! op takes 0.116999864578 seconds : function:POST /api/mgr/sq_mgr/  
+0521_14:10:34 !! op takes 0.134999990463 seconds : function:POST /api/mgr/sq_mgr/  
+0521_14:10:39 !! op takes 0.157999992371 seconds : function:POST /api/mgr/sq_mgr/  
+0521_14:13:40 !! op takes 0.128999948502 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_14:15:33 !! op takes 0.121999979019 seconds : function:POST /api/mgr/sq_mgr/  
+0521_14:16:06 !! op takes 0.117000102997 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_14:34:05 !! op takes 0.212000131607 seconds : function:POST /api/mgr/sq_mgr/  
+0521_14:34:11 !! op takes 0.192999839783 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_14:43:35 !! op takes 0.164999961853 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:00:23 !! op takes 0.12299990654 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:00:30 !! op takes 0.104000091553 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:00:43 !! op takes 0.154000043869 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:00:50 !! op takes 0.25 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:00:51 !! op takes 0.204999923706 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:00:59 !! op takes 0.240000009537 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:01:20 !! op takes 0.205999851227 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:01:40 !! op takes 0.111999988556 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:01:51 !! op takes 0.105000019073 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:01:53 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:01:58 !! op takes 0.134000062943 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:02:05 !! op takes 0.174000024796 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:02:06 !! op takes 0.174999952316 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:02:13 !! op takes 0.184000015259 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:02:38 !! op takes 0.292000055313 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:06:01 !! op takes 0.152000188828 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:06:09 !! op takes 0.232000112534 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:06:16 !! op takes 0.128999948502 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:07:57 !! op takes 0.166000127792 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:08:00 !! op takes 0.175999879837 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:08:04 !! op takes 0.136999845505 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:08:08 !! op takes 0.154000043869 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:08:15 !! op takes 0.110999822617 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:08:16 !! op takes 0.106000185013 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:08:23 !! op takes 0.223999977112 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:08:25 !! op takes 0.12700009346 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:10:28 !! op takes 0.108999967575 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:10:31 !! op takes 0.111000061035 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:10:36 !! op takes 0.156999826431 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:10:40 !! op takes 0.207999944687 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:10:47 !! op takes 0.108000040054 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:10:54 !! op takes 0.164000034332 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:10:56 !! op takes 0.133000135422 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:11:21 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:11:28 !! op takes 0.102999925613 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:32:35 !! op takes 0.190999984741 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:32:40 !! op takes 0.198999881744 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:32:46 !! op takes 0.126999855042 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:32:51 !! op takes 0.140999794006 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:33:10 !! op takes 0.138999938965 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:33:12 !! op takes 0.102999925613 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:37:34 !! op takes 0.158999919891 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:37:40 !! op takes 0.128999948502 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:37:44 !! op takes 0.131999969482 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:37:58 !! op takes 0.131000041962 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:37:59 !! op takes 0.125999927521 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:38:09 !! op takes 0.101999998093 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:38:17 !! op takes 0.111999988556 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:38:18 !! op takes 0.167000055313 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:42:06 !! op takes 0.103000164032 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:42:11 !! op takes 0.103999853134 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:50:21 !! op takes 0.18700003624 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:50:25 !! op takes 0.182999849319 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:50:31 !! op takes 0.137000083923 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:50:37 !! op takes 0.114000082016 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:50:38 !! op takes 0.15900015831 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:50:51 !! op takes 0.176000118256 seconds : function:POST /api/mgr/sq_mgr/  
+0521_15:50:57 !! op takes 0.105999946594 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_15:50:59 !! op takes 0.263999938965 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_21:02:43 !! op takes 0.199999809265 seconds : function:POST /api/mgr/sq_mgr/  
+0521_21:05:03 !! op takes 0.194000005722 seconds : function:POST /api/mgr/sq_mgr/  
+0521_21:57:27 !! op takes 0.123000144958 seconds : function:POST /api/mgr/sq_mgr/  
+0521_21:57:29 !! op takes 0.208999872208 seconds : function:POST /api/mgr/sq_mgr/  
+0521_21:57:32 !! op takes 0.106999874115 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_22:05:12 !! op takes 0.157999992371 seconds : function:POST /api/mgr/sq_mgr/  
+0521_22:05:14 !! op takes 0.144000053406 seconds : function:POST /api/mgr/sq_mgr/  
+0521_22:05:17 !! op takes 0.113999843597 seconds : function:DELETE /api/mgr/sq_mgr/  
+0521_22:05:29 !! op takes 0.145999908447 seconds : function:POST /api/mgr/sq_mgr/  
+0522_10:23:33 !! op takes 0.25200009346 seconds : function:POST /api/mgr/sq_mgr/  
+0522_10:24:20 !! op takes 0.246999979019 seconds : function:POST /api/mgr/sq_mgr/  
+0522_11:52:06 !! op takes 0.149999856949 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_13:45:47 !! op takes 0.100999832153 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_14:40:10 !! op takes 0.111999988556 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_14:40:50 !! op takes 0.231999874115 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_14:41:56 !! op takes 0.220999956131 seconds : function:POST /api/mgr/sq_mgr/  
+0522_14:44:00 !! op takes 0.101999998093 seconds : function:POST /api/mgr/sq_mgr/  
+0522_14:44:03 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 178, in handle_add_student
+    return  JsonResponse(Student.add(data))
+  File "d:\tools\Python27\lib\site-packages\django\http\response.py", line 524, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+
+0522_15:02:50 Traceback (most recent call last):
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 178, in handle_add_student
+    return  JsonResponse(Student.add(data))
+  File "d:\tools\Python27\lib\site-packages\django\http\response.py", line 524, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+
+0522_15:05:50 !! op takes 0.182999849319 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:11:59 !! op takes 0.160000085831 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_15:14:48 !! op takes 0.166000127792 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:15:10 !! op takes 0.109999895096 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_15:16:11 !! op takes 0.102999925613 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_15:16:30 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:22:40 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:23:00 !! op takes 0.171999931335 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_15:24:34 !! op takes 0.174000024796 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:54:20 !! op takes 0.118000030518 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:54:23 !! op takes 0.155999898911 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:56:25 !! op takes 0.118000030518 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_15:56:43 !! op takes 0.128000020981 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:56:45 !! op takes 0.127999782562 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:56:53 !! op takes 0.107000112534 seconds : function:POST /api/mgr/sq_mgr/  
+0522_15:56:57 !! op takes 0.108000040054 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:06:18 !! op takes 0.143999814987 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_16:06:28 !! op takes 0.100999832153 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_16:06:40 !! op takes 0.136000156403 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_16:06:50 !! op takes 0.125 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:06:52 !! op takes 0.138999938965 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:07:00 !! op takes 0.125 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:07:04 !! op takes 0.110999822617 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:07:40 !! op takes 0.111000061035 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:07:42 !! op takes 0.197999954224 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:07:58 !! op takes 0.117000102997 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_16:08:07 !! op takes 0.162999868393 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:08:11 !! op takes 0.113000154495 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:45:46 !! op takes 0.161000013351 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:45:49 !! op takes 0.164999961853 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:45:52 !! op takes 0.138000011444 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:45:57 !! op takes 0.128000020981 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:46:01 !! op takes 0.107999801636 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:46:36 !! op takes 0.118000030518 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:46:39 !! op takes 0.138999938965 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:46:52 !! op takes 0.128999948502 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_16:46:54 !! op takes 0.171000003815 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_16:47:03 !! op takes 0.167999982834 seconds : function:POST /api/mgr/sq_mgr/  
+0522_16:47:07 !! op takes 0.128000020981 seconds : function:POST /api/mgr/sq_mgr/  
+0522_22:23:34 !! op takes 0.153000116348 seconds : function:DELETE /api/mgr/sq_mgr/  
+0522_22:23:52 !! op takes 0.117000102997 seconds : function:POST /api/mgr/sq_mgr/  
+0522_22:24:00 !! op takes 0.121999979019 seconds : function:POST /api/mgr/sq_mgr/  
+0523_09:51:23 !! op takes 0.115999937057 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_09:51:32 !! op takes 0.106999874115 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_09:51:44 !! op takes 0.148999929428 seconds : function:POST /api/mgr/sq_mgr/  
+0523_09:51:46 !! op takes 0.137000083923 seconds : function:POST /api/mgr/sq_mgr/  
+0523_09:51:52 !! op takes 0.125 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:04:00 !! op takes 0.12700009346 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:04:08 !! op takes 0.108999967575 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:06:45 !! op takes 0.107000112534 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:19:54 !! op takes 0.161999940872 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_10:20:01 !! op takes 0.131999969482 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:20:04 !! op takes 0.128000020981 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:20:09 !! op takes 0.12099981308 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:21:12 !! op takes 0.115000009537 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_10:21:24 !! op takes 0.118999958038 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:21:26 !! op takes 0.203999996185 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:21:32 !! op takes 0.107999801636 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:26:21 !! op takes 0.105000019073 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_10:26:37 !! op takes 0.125999927521 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:26:45 !! op takes 0.121999979019 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:49:11 !! op takes 0.241999864578 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_10:49:19 !! op takes 0.114000082016 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:49:26 !! op takes 0.105000019073 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:56:43 !! op takes 0.22200012207 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:56:45 !! op takes 0.112999916077 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:56:47 !! op takes 0.131000041962 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:56:51 !! op takes 0.110000133514 seconds : function:POST /api/mgr/sq_mgr/  
+0523_10:56:54 !! op takes 0.150000095367 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:03:46 !! op takes 0.107999801636 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:03:54 !! op takes 0.120000123978 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:04:01 !! op takes 0.104000091553 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:12:52 !! op takes 0.134999990463 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:13:03 !! op takes 0.115000009537 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:13:05 !! op takes 0.110000133514 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:13:10 !! op takes 0.109999895096 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:13:30 !! op takes 0.171000003815 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:13:42 !! op takes 0.125 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:14:04 !! op takes 0.123999834061 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:14:06 !! op takes 0.116999864578 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:14:12 !! op takes 0.126999855042 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:14:15 !! op takes 0.108000040054 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:14:39 !! op takes 0.129999876022 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:14:41 !! op takes 0.143999814987 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:14:55 !! op takes 0.164000034332 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:14:59 !! op takes 0.120000123978 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:15:01 !! op takes 0.157999992371 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:15:19 !! op takes 0.128999948502 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:19:04 !! op takes 0.12099981308 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:19:10 !! op takes 0.112999916077 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:19:38 !! op takes 0.118000030518 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:20:00 !! op takes 0.119999885559 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:02 !! op takes 0.126000165939 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:04 !! op takes 0.233000040054 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:08 !! op takes 0.107000112534 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:11 !! op takes 0.128999948502 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:35 !! op takes 0.128999948502 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:37 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:44 !! op takes 0.118000030518 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:20:55 !! op takes 0.131000041962 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:20:58 !! op takes 0.124000072479 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:21:01 !! op takes 0.105000019073 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:21:16 !! op takes 0.119000196457 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_11:29:34 !! op takes 0.115999937057 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:29:39 !! op takes 0.106999874115 seconds : function:POST /api/mgr/sq_mgr/  
+0523_11:29:41 !! op takes 0.101999998093 seconds : function:POST /api/mgr/sq_mgr/  
+0523_20:56:11 !! op takes 0.101000070572 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_20:56:21 !! op takes 0.138000011444 seconds : function:POST /api/mgr/sq_mgr/  
+0523_20:56:24 !! op takes 0.153000116348 seconds : function:POST /api/mgr/sq_mgr/  
+0523_20:56:27 !! op takes 0.142999887466 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_21:04:40 !! op takes 0.108000040054 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:04:43 !! op takes 0.104000091553 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:04:45 !! op takes 0.202000141144 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:05:51 !! op takes 0.118999958038 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_21:06:23 !! op takes 0.138999938965 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:06:26 !! op takes 0.111999988556 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:06:37 !! op takes 0.162999868393 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_21:09:37 !! op takes 0.226000070572 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:09:40 !! op takes 0.163000106812 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:09:54 !! op takes 0.103000164032 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_21:09:55 !! op takes 0.110000133514 seconds : function:DELETE /api/mgr/sq_mgr/  
+0523_21:10:28 !! op takes 0.136999845505 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:10:31 !! op takes 0.12700009346 seconds : function:POST /api/mgr/sq_mgr/  
+0523_21:10:42 !! op takes 0.126000165939 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_20:32:23 !! op takes 0.15399980545 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_20:35:02 !! op takes 0.115000009537 seconds : function:POST /api/mgr/sq_mgr/  
+0524_20:41:45 !! op takes 0.131000041962 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:04:39 !! op takes 0.12700009346 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:04:53 !! op takes 0.214999914169 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:08:52 !! op takes 0.101999998093 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:10:12 !! op takes 0.109999895096 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:10:26 !! op takes 0.131000041962 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:11:15 !! op takes 0.226999998093 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:11:21 !! op takes 0.180000066757 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:11:24 !! op takes 0.100000143051 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:12:54 !! op takes 0.101999998093 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:13:18 !! op takes 0.186000108719 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:13:20 !! op takes 0.194000005722 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:16:41 !! op takes 0.1859998703 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:16:45 !! op takes 0.176000118256 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:16:48 !! op takes 0.109999895096 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:16:49 !! op takes 0.101999998093 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:16:53 !! op takes 0.101000070572 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:34:53 !! op takes 0.100999832153 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:34:55 !! op takes 0.112999916077 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:35:02 !! op takes 0.120000123978 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:35:08 !! op takes 0.196000099182 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:35:12 !! op takes 0.203999996185 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:35:15 !! op takes 0.126999855042 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:38:41 !! op takes 0.106999874115 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:38:54 !! op takes 0.109999895096 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:39:02 !! op takes 0.135999917984 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:39:08 !! op takes 0.218999862671 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:39:12 !! op takes 0.209000110626 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:39:23 !! op takes 0.105000019073 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:39:46 !! op takes 0.126999855042 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:39:50 !! op takes 0.173000097275 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:40:14 !! op takes 0.140000104904 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:40:27 !! op takes 0.125999927521 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:40:29 !! op takes 0.154000043869 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:44:04 !! op takes 0.201999902725 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:44:08 !! op takes 0.135999917984 seconds : function:POST /api/mgr/sq_mgr/  
+0524_21:44:11 !! op takes 0.131999969482 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:44:17 !! op takes 0.108000040054 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:44:19 !! op takes 0.337999820709 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:44:34 !! op takes 0.115999937057 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_21:44:36 !! op takes 0.128999948502 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_22:17:57 !! op takes 0.112999916077 seconds : function:POST /api/mgr/sq_mgr/  
+0524_22:18:46 !! op takes 0.121999979019 seconds : function:DELETE /api/mgr/sq_mgr/  
+0524_22:20:40 !! op takes 2.79699993134 seconds : function:POST /api/mgr/sq_mgr/  
+0525_08:59:12 !! op takes 0.111000061035 seconds : function:POST /api/mgr/sq_mgr/  
+0525_08:59:17 !! op takes 0.105999946594 seconds : function:POST /api/mgr/sq_mgr/  
+0525_08:59:21 !! op takes 0.112999916077 seconds : function:POST /api/mgr/sq_mgr/  
+0525_08:59:43 !! op takes 0.104000091553 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:11:35 !! op takes 0.128000020981 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:38:25 !! op takes 0.104000091553 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_20:38:30 !! op takes 0.171000003815 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:38:33 !! op takes 0.174999952316 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:40:49 !! op takes 0.226999998093 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_20:40:54 !! op takes 0.21799993515 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:40:57 !! op takes 0.167000055313 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:41:57 !! op takes 0.132999897003 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:42:00 !! op takes 0.22100019455 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:43:27 !! op takes 0.143000125885 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:51:31 !! op takes 0.136000156403 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_20:51:37 !! op takes 0.221999883652 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_20:51:46 !! op takes 0.116999864578 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:53:50 !! op takes 0.106000185013 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_20:54:08 !! op takes 3.24000000954 seconds : function:POST /api/mgr/sq_mgr/  
+0526_20:58:14 !! op takes 0.149999856949 seconds : function:POST /api/mgr/sq_mgr/  
+0526_21:13:05 !! op takes 0.179000139236 seconds : function:POST /api/mgr/sq_mgr/  
+0526_21:14:03 !! op takes 0.106999874115 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_21:14:03 !! op takes 0.107000112534 seconds : function:GET /api/mgr/sq_mgr/  
+0526_21:14:04 !! op takes 0.102999925613 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_21:14:10 !! op takes 0.128999948502 seconds : function:POST /api/mgr/sq_mgr/  
+0526_21:14:16 !! op takes 0.194000005722 seconds : function:POST /api/mgr/sq_mgr/  
+0526_21:14:19 !! op takes 0.177999973297 seconds : function:POST /api/mgr/sq_mgr/  
+0526_21:14:29 !! op takes 0.188999891281 seconds : function:POST /api/mgr/sq_mgr/  
+0526_21:14:33 !! op takes 0.130999803543 seconds : function:POST /api/mgr/sq_mgr/  
+0526_21:14:36 !! op takes 0.261000156403 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_21:14:38 !! op takes 0.117000102997 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_21:14:43 !! op takes 0.167999982834 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_21:14:52 !! op takes 0.113000154495 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_21:14:58 !! op takes 0.118000030518 seconds : function:DELETE /api/mgr/sq_mgr/  
+0526_22:02:49 !! op takes 0.143000125885 seconds : function:POST /api/mgr/sq_mgr/  

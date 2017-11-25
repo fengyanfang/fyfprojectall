@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170711 11:21:23.225" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\classes\yidu\tc" id="s1" name="Tc">
+<suite source="C:\classes\yidu\tc\App测试" id="s1-s1" name="App测试">
+<kw type="setup" name="Open Session" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:22:32.256" starttime="20170711 11:21:24.475"></status>
+</kw>
+<suite source="C:\classes\yidu\tc\App测试\工单测试" id="s1-s1-s1" name="工单测试">
+<kw type="setup" name="Login App" library="pylib.AppOp">
+<arguments>
+<arg>15833098119</arg>
+<arg>1234</arg>
+</arguments>
+<status status="PASS" endtime="20170711 11:22:45.471" starttime="20170711 11:22:32.302"></status>
+</kw>
+<suite source="C:\classes\yidu\tc\App测试\工单测试\充电单" id="s1-s1-s1-s1" name="充电单">
+<suite source="C:\classes\yidu\tc\App测试\工单测试\充电单\充电单创建.robot" id="s1-s1-s1-s1-s1" name="充电单创建">
+<test id="s1-s1-s1-s1-s1-t1" name="创建充电单">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>CdSelect</arg>
+<arg>AND</arg>
+<arg>DeleteCdList</arg>
+</arguments>
+<kw name="Cd Select" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:22:49.237" starttime="20170711 11:22:45.611"></status>
+</kw>
+<kw name="Delete Cd List" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:23:00.618" starttime="20170711 11:22:49.237"></status>
+</kw>
+<status status="PASS" endtime="20170711 11:23:00.618" starttime="20170711 11:22:45.611"></status>
+</kw>
+<kw name="Come Main 1" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:23:00.680" starttime="20170711 11:23:00.618"></status>
+</kw>
+<kw name="Cd Cd Car Table" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:23:02.847" starttime="20170711 11:23:00.680"></status>
+</kw>
+<kw name="Create Cd" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:23:15.041" starttime="20170711 11:23:02.847"></status>
+</kw>
+<kw name="Verify Cd Created" library="pylib.AppOp">
+<assign>
+<var>${verirycd}</var>
+</assign>
+<msg timestamp="20170711 11:23:15.556" level="INFO">${verirycd} = True</msg>
+<status status="PASS" endtime="20170711 11:23:15.556" starttime="20170711 11:23:15.041"></status>
+</kw>
+<kw name="Come Main 4" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:23:20.261" starttime="20170711 11:23:15.556"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$verirycd</arg>
+</arguments>
+<status status="PASS" endtime="20170711 11:23:20.261" starttime="20170711 11:23:20.261"></status>
+</kw>
+<status status="PASS" endtime="20170711 11:23:20.261" critical="yes" starttime="20170711 11:22:45.580"></status>
+</test>
+<status status="PASS" endtime="20170711 11:23:20.308" starttime="20170711 11:22:45.517"></status>
+</suite>
+<status status="PASS" endtime="20170711 11:23:20.410" starttime="20170711 11:22:45.471"></status>
+</suite>
+<kw type="teardown" name="Logout" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:23:23.561" starttime="20170711 11:23:20.535"></status>
+</kw>
+<status status="PASS" endtime="20170711 11:23:23.561" starttime="20170711 11:22:32.256"></status>
+</suite>
+<kw type="teardown" name="Close Session" library="pylib.AppOp">
+<status status="PASS" endtime="20170711 11:23:32.459" starttime="20170711 11:23:23.561"></status>
+</kw>
+<status status="PASS" endtime="20170711 11:23:32.459" starttime="20170711 11:21:23.366"></status>
+</suite>
+<status status="PASS" endtime="20170711 11:23:32.475" starttime="20170711 11:21:23.241"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tc" pass="1">Tc</stat>
+<stat fail="0" id="s1-s1" name="App测试" pass="1">Tc.App测试</stat>
+<stat fail="0" id="s1-s1-s1" name="工单测试" pass="1">Tc.App测试.工单测试</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="充电单" pass="1">Tc.App测试.工单测试.充电单</stat>
+<stat fail="0" id="s1-s1-s1-s1-s1" name="充电单创建" pass="1">Tc.App测试.工单测试.充电单.充电单创建</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,22 @@
+
+
+    <div class="row">
+        <div class="col-lg-8">
+
+            <button ng-click="resetPage()">Reset Page111</button>
+
+            <br>
+
+
+                    <ul>
+                        <li dir-paginate="meal in meals | itemsPerPage: pageSize" current-page="currentPage">{{ meal }}</li>
+
+                    </ul>
+            <br>
+
+
+                    <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" ></dir-pagination-controls>
+
+
+        </div>
+    </div>

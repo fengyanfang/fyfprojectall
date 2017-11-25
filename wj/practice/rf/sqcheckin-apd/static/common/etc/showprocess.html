@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html ng-app="theApp">
+<head>
+
+    <title>老师点评</title>
+    <meta charset="utf-8">
+
+
+    <link type="text/css" rel="stylesheet" href="/jojo_cdn/vendors/font-awesome/css/font-awesome.min.css">
+
+    <script src="/jojo_cdn/jslib/angular/angular.min.js"></script>
+    <script src="/jojo_cdn/jslib/angular/angular-sanitize.min.js"></script>
+
+    <!-- amr 音频播放器-->
+    <script src="/jojo_cdn/jslib/etc/amrnb.js" defer></script>
+</head>
+
+<body>
+
+<div class="" ng-controller="theCtrl">
+    <div class="row" ng-repeat="one in curWriteProcess" style="position: relative;margin-top:10px">
+
+        <img ng-src="{{one.img}}" style="max-width:100%">
+        <!--<div style="color: black;opacity: 0.5;position: absolute;top: 0px;height: 50px;width:500px;z-index: 1000 "></div>-->
+        <img src="/jojo_cdn/images/etc/voice_comment2.png" title="老师点评" ng-repeat="voice in one.teachervoice"
+           style="position: absolute;top: 10px; left:{{$index*50+10}}px;width: 50px;cursor: pointer"
+           ng-click="playTeacherVoice(voice)">
+
+
+    </div>
+
+
+</div>
+
+<script>
+
+    var theApp= angular.module('theApp', ['ngSanitize']);
+
+
+    theApp.controller('theCtrl', function ($scope) {
+
+        $scope.curWriteProcess = window.parent.g_tmp_curWriteProcess;
+
+        $scope.playTeacherVoice = function(voice) {
+//            var url =   voice.url.replace('http','https');
+            var url =   voice.url;
+            console.log(url);
+            fetchBlob(url, function(blob) {
+                playAmrBlob(blob);
+            });
+        };
+
+    });
+
+
+
+    var gAudioContext = new AudioContext();
+
+    function getAudioContext() {
+        if (!gAudioContext) {
+            gAudioContext = new AudioContext();
+        }
+        return gAudioContext;
+    }
+
+    function fetchBlob(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.onload = function() {
+            callback(this.response);
+        };
+        xhr.onerror = function() {
+            alert('Failed to fetch ' + url);
+        };
+        xhr.send();
+    }
+
+    function readBlob(blob, callback) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var data = new Uint8Array(e.target.result);
+            callback(data);
+        };
+        reader.readAsArrayBuffer(blob);
+    }
+
+    function playAmrBlob(blob, callback) {
+        readBlob(blob, function(data) {
+            playAmrArray(data);
+        });
+    }
+
+
+    function playAmrArray(array) {
+        var samples = AMR.decode(array);
+        if (!samples) {
+            alert('Failed to decode!');
+            return;
+        }
+        playPcm(samples);
+    }
+
+    function playPcm(samples) {
+        if (window.curAudioBufferSource){
+            window.curAudioBufferSource.stop();
+        }
+        var ctx = getAudioContext();
+        var src = ctx.createBufferSource();
+        window.curAudioBufferSource = src;
+        var buffer = ctx.createBuffer(1, samples.length, 8000);
+        if (buffer.copyToChannel) {
+            buffer.copyToChannel(samples, 0, 0)
+        } else {
+            var channelBuffer = buffer.getChannelData(0);
+            channelBuffer.set(samples);
+        }
+
+        src.buffer = buffer;
+        src.connect(ctx.destination);
+        src.start();
+    }
+
+    function stopPlayPcm() {
+        window.curAudioContext.close();
+    }
+</script>
+</body>
+</html>

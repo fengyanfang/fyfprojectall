@@ -1,0 +1,580 @@
+0516_11:12:27 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0516_13:53:33 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0516_15:59:44 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0516_16:34:07 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0516_16:51:58 Not Found: /
+0516_16:55:54 Not Found: /
+0516_17:06:15 Not Found: /
+0516_18:53:33 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0516_23:09:39 Not Found: /
+0517_10:28:30 Not Found: /
+0517_14:39:35 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0517_18:38:44 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0517_20:45:26 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0517_21:47:58 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0518_10:26:30 Not Found: /
+0518_10:34:48 Not Found: /
+0518_10:53:27 Not Found: /
+0518_11:22:18 Not Found: /
+0518_11:47:45 Not Found: /
+0518_13:48:07 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0518_14:33:26 Not Found: /
+0518_14:33:34 Not Found: /
+0518_14:34:21 Not Found: /
+0518_14:37:30 Not Found: /
+0518_14:42:46 Not Found: /
+0518_14:51:49 Not Found: /
+0518_14:52:26 Not Found: /
+0518_14:55:23 Not Found: /
+0518_15:25:26 Not Found: /
+0518_15:28:31 Not Found: /
+0518_15:30:48 Not Found: /
+0518_15:36:37 Not Found: /
+0518_15:40:58 Not Found: /
+0518_15:41:39 Not Found: /
+0518_15:45:15 Not Found: /
+0518_15:47:51 Not Found: /
+0518_16:01:30 Not Found: /
+0518_16:28:03 Not Found: /
+0518_16:29:19 Not Found: /
+0518_16:52:46 Not Found: /
+0518_16:57:27 Not Found: /
+0518_17:07:54 Not Found: /
+0518_17:24:44 Not Found: /
+0518_17:38:41 Not Found: /
+0518_17:43:49 Not Found: /
+0518_17:44:26 Not Found: /
+0518_17:48:05 Not Found: /
+0518_17:49:05 Not Found: /
+0518_17:51:22 Not Found: /
+0518_17:52:38 Not Found: /
+0518_18:00:31 Not Found: /
+0518_18:48:07 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0518_20:26:22 Not Found: /
+0518_21:00:27 Not Found: /
+0518_21:05:06 Not Found: /
+0518_21:16:12 Not Found: /
+0518_21:44:41 Not Found: /
+0518_22:01:49 Not Found: /
+0519_09:40:40 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0519_09:56:18 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0519_10:14:10 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0519_10:39:09 Not Found: /
+0519_10:40:10 Not Found: /
+0519_11:01:38 Not Found: /
+0519_11:02:44 Not Found: /
+0519_11:17:28 Not Found: /
+0519_11:29:52 Not Found: /
+0519_11:34:26 Not Found: /
+0519_11:37:24 Not Found: /
+0519_11:39:22 Not Found: /
+0519_11:41:55 Not Found: /
+0519_11:42:20 Not Found: /
+0519_11:43:15 Not Found: /
+0519_11:44:17 Not Found: /
+0519_13:43:53 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0519_17:23:36 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+0519_17:25:28 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+0519_17:27:22 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+0519_17:27:46 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+0519_17:27:50 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+0519_17:31:06 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-3: invalid decimal Unicode string
+0519_17:31:27 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0519_17:32:10 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 153, in handle_add_course
+    return  JsonResponse(Course.add(data))
+  File "e:\projects\sqcheckin-ap\backend\services\datamodel\common\models.py", line 87, in add
+    display_idx=data['display_idx'])
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 393, in create
+    obj.save(force_insert=True, using=self.db)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1060, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1098, in execute_sql
+    for sql, params in self.as_sql():
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 1051, in as_sql
+    for obj in self.query.objs
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 990, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 766, in get_db_prep_save
+    prepared=False)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1849, in get_prep_value
+    return int(value)
+UnicodeEncodeError: 'decimal' codec can't encode characters in position 0-1: invalid decimal Unicode string
+0519_18:43:50 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0519_20:52:34 Not Found: /
+0519_21:26:53 Not Found: /
+0519_21:34:15 Not Found: /
+0519_21:37:28 Not Found: /
+0519_21:38:47 Not Found: /
+0519_21:39:48 Not Found: /
+0519_21:45:45 Not Found: /
+0519_21:50:45 Not Found: /
+0520_15:38:50 Not Found: /
+0520_20:37:46 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0521_09:21:27 Not Found: /
+0521_14:01:16 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0521_14:16:01 Not Found: /
+0521_14:33:03 Not Found: /
+0521_14:33:12 Not Found: /
+0521_14:33:36 Not Found: /
+0521_14:33:51 Not Found: /
+0521_15:00:18 Not Found: /
+0521_15:01:10 Not Found: /
+0521_15:01:35 Not Found: /
+0521_15:02:24 Not Found: /
+0521_15:05:40 Not Found: /
+0521_15:07:43 Not Found: /
+0521_15:09:49 Not Found: /
+0521_15:10:14 Not Found: /
+0521_15:11:07 Not Found: /
+0521_15:32:16 Not Found: /
+0521_15:37:22 Not Found: /
+0521_15:41:54 Not Found: /
+0521_15:50:03 Not Found: /
+0521_20:32:23 Internal Server Error: /api/mgr/logoutreq
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-ap\backend\apps\mgr\handlers\loginout.py", line 75, in logoutReq
+    logout(request)
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 169, in logout
+    user_logged_out.send(sender=user.__class__, request=request, user=user)
+  File "d:\tools\Python27\lib\site-packages\django\utils\functional.py", line 238, in inner
+    self._setup()
+  File "d:\tools\Python27\lib\site-packages\django\utils\functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 206, in get_user
+    user_id = _get_user_session_key(request)
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "d:\tools\Python27\lib\site-packages\django\contrib\sessions\backends\base.py", line 57, in __getitem__
+    return self._session[key]
+  File "d:\tools\Python27\lib\site-packages\django\contrib\sessions\backends\base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "d:\tools\Python27\lib\site-packages\django\contrib\sessions\backends\cached_db.py", line 45, in load
+    expire_date__gt=timezone.now()
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 373, in get
+    num = len(clone)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 232, in __len__
+    self._fetch_all()
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1102, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 874, in execute_sql
+    cursor = self.connection.cursor()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 254, in cursor
+    return self._cursor()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 213, in ensure_connection
+    self.connect()
+  File "d:\tools\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 213, in ensure_connection
+    self.connect()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 198, in get_new_connection
+    conn = Database.connect(**conn_params)
+OperationalError: unable to open database file
+0521_20:33:02 Internal Server Error: /api/mgr/logoutreq
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-ap\backend\apps\mgr\handlers\loginout.py", line 75, in logoutReq
+    logout(request)
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 169, in logout
+    user_logged_out.send(sender=user.__class__, request=request, user=user)
+  File "d:\tools\Python27\lib\site-packages\django\utils\functional.py", line 238, in inner
+    self._setup()
+  File "d:\tools\Python27\lib\site-packages\django\utils\functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 206, in get_user
+    user_id = _get_user_session_key(request)
+  File "d:\tools\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "d:\tools\Python27\lib\site-packages\django\contrib\sessions\backends\base.py", line 57, in __getitem__
+    return self._session[key]
+  File "d:\tools\Python27\lib\site-packages\django\contrib\sessions\backends\base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "d:\tools\Python27\lib\site-packages\django\contrib\sessions\backends\cached_db.py", line 45, in load
+    expire_date__gt=timezone.now()
+  File "d:\tools\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 373, in get
+    num = len(clone)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 232, in __len__
+    self._fetch_all()
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 1102, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Python27\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "d:\tools\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 874, in execute_sql
+    cursor = self.connection.cursor()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 254, in cursor
+    return self._cursor()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 213, in ensure_connection
+    self.connect()
+  File "d:\tools\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 213, in ensure_connection
+    self.connect()
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\base\base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "d:\tools\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 198, in get_new_connection
+    conn = Database.connect(**conn_params)
+OperationalError: unable to open database file
+0522_13:52:30 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0522_14:44:03 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 178, in handle_add_student
+    return  JsonResponse(Student.add(data))
+  File "d:\tools\Python27\lib\site-packages\django\http\response.py", line 524, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+0522_15:02:50 Internal Server Error: /api/mgr/sq_mgr/
+Traceback (most recent call last):
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\projects\sqcheckin-apd\backend\apps\mgr\urls.py", line 51, in CheckUserIsAdminForApiCaller
+    ret = realCall(request,*args,**kwargs)
+  File "e:\projects\sqcheckin-apd\backend\lib\common.py", line 55, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\projects\sqcheckin\backend\apps\mgr\handlers\mgr.py", line 178, in handle_add_student
+    return  JsonResponse(Student.add(data))
+  File "d:\tools\Python27\lib\site-packages\django\http\response.py", line 524, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+0522_15:06:15 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0522_15:17:55 Invalid HTTP_HOST header: 'clients2.google.com'. You may need to add u'clients2.google.com' to ALLOWED_HOSTS.
+0523_20:47:18 Not Found: /
+0523_20:56:02 Not Found: /
+0523_21:00:58 Not Found: /
+0523_21:04:25 Not Found: /
+0523_21:06:05 Not Found: /
+0523_21:09:16 Not Found: /
+0523_21:10:11 Not Found: /

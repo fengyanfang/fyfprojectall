@@ -1,0 +1,48 @@
+<!-- partial-home.html -->
+
+<div class="">
+
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12"  ng-if="checkinList.length>0">
+
+        <table class="table table-hover table-striped table-bordered table-advanced tablesorter" >
+            <thead>
+            <tr>
+
+                <th width="40%" style="text-align:center">课程</th>
+                <th width="30%" style="text-align:center">上课时间</th>
+                <th width="30%" style="text-align:center">签到时间</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr ng-repeat="one in checkinList" >
+
+                <td style="text-align:center">
+                    <span >{{one.lessondesc}}</span>
+                </td>
+
+                <td style="text-align:center">
+                    <span >{{one.lesson__starttime.toLocaleString('zh-CN' ,{ hour12: false })}}</span>
+                </td>
+
+                <td style="text-align:center">
+                    <span >{{one.checkintime.toLocaleString('zh-CN' ,{ hour12: false })}}</span>
+                </td>
+
+
+            </tr>
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+    <div class="note note-success" ng-if="checkinList.length==0" >
+        <h4 class="box-heading">没有查询到签到信息</h4>
+    </div>
+
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/inter/pylib/njlib.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inter/tci/ydyc/用车流程.robot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inter/tci/年检单/njlist.robot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/tc/__init__.robot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/tc/运维工单/__init__.robot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/tc/运维工单/充电单/充电单.robot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/tc/运维工单/调度单/调度单.robot" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

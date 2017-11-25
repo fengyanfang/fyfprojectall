@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171028 20:36:46.389" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\classes\wj\yidu_web\web\tc" id="s1" name="Tc">
+<kw type="setup" name="Open Browser" library="pylib.WebOp">
+<arguments>
+<arg>chrome</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:36:51.817" starttime="20171028 20:36:46.956"></status>
+</kw>
+<suite source="C:\classes\wj\yidu_web\web\tc\运维工单" id="s1-s1" name="运维工单">
+<kw type="setup" name="Login Web Site" library="pylib.WebOp">
+<arguments>
+<arg>15833098112</arg>
+<arg>Fyf136066</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:06.512" starttime="20171028 20:36:51.837"></status>
+</kw>
+<suite source="C:\classes\wj\yidu_web\web\tc\运维工单\充电单" id="s1-s1-s1" name="充电单">
+<suite source="C:\classes\wj\yidu_web\web\tc\运维工单\充电单\充电单.robot" id="s1-s1-s1-s1" name="充电单">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>clear</arg>
+<arg>chargeup_list</arg>
+<arg>AND</arg>
+<arg>clear</arg>
+<arg>chargeup_operate_log</arg>
+<arg>AND</arg>
+<arg>cd_insert</arg>
+<arg>1</arg>
+<arg>AND</arg>
+<arg>cd_insert</arg>
+<arg>2</arg>
+<arg>AND</arg>
+<arg>cd_insert</arg>
+<arg>3</arg>
+<arg>AND</arg>
+<arg>cd_insert</arg>
+<arg>4</arg>
+<arg>AND</arg>
+<arg>cd_change_record</arg>
+<arg>2</arg>
+<arg>AND</arg>
+<arg>cd_delete</arg>
+<arg>2</arg>
+<arg>AND</arg>
+<arg>close</arg>
+<arg>AND</arg>
+<arg>ToCdMenu</arg>
+</arguments>
+<kw name="Clear" library="pylib.DataBase">
+<arguments>
+<arg>chargeup_list</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:07.322" starttime="20171028 20:37:07.261"></status>
+</kw>
+<kw name="Clear" library="pylib.DataBase">
+<arguments>
+<arg>chargeup_operate_log</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:07.356" starttime="20171028 20:37:07.323"></status>
+</kw>
+<kw name="Cd Insert" library="pylib.DataBase">
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20171028 20:37:08.009" level="INFO">1</msg>
+<status status="PASS" endtime="20171028 20:37:08.010" starttime="20171028 20:37:07.356"></status>
+</kw>
+<kw name="Cd Insert" library="pylib.DataBase">
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20171028 20:37:08.704" level="INFO">2</msg>
+<status status="PASS" endtime="20171028 20:37:08.704" starttime="20171028 20:37:08.010"></status>
+</kw>
+<kw name="Cd Insert" library="pylib.DataBase">
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20171028 20:37:09.419" level="INFO">3</msg>
+<status status="PASS" endtime="20171028 20:37:09.420" starttime="20171028 20:37:08.705"></status>
+</kw>
+<kw name="Cd Insert" library="pylib.DataBase">
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20171028 20:37:10.137" level="INFO">4</msg>
+<status status="PASS" endtime="20171028 20:37:10.138" starttime="20171028 20:37:09.420"></status>
+</kw>
+<kw name="Cd Change Record" library="pylib.DataBase">
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20171028 20:37:10.769" level="INFO">{u'status': 0, u'msg': u'\u6dfb\u52a0\u6210\u529f', u'data': []}</msg>
+<status status="PASS" endtime="20171028 20:37:10.770" starttime="20171028 20:37:10.138"></status>
+</kw>
+<kw name="Cd Delete" library="pylib.DataBase">
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:11.159" starttime="20171028 20:37:10.770"></status>
+</kw>
+<kw name="Close" library="pylib.DataBase">
+<status status="PASS" endtime="20171028 20:37:11.161" starttime="20171028 20:37:11.160"></status>
+</kw>
+<kw name="To Cd Menu" library="pylib.WebOp">
+<msg timestamp="20171028 20:37:15.189" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</msg>
+<status status="FAIL" endtime="20171028 20:37:15.189" starttime="20171028 20:37:11.162"></status>
+</kw>
+<status status="FAIL" endtime="20171028 20:37:15.190" starttime="20171028 20:37:07.258"></status>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="编号查询01">
+<status status="FAIL" endtime="20171028 20:37:15.193" critical="yes" starttime="20171028 20:37:15.190">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="编号查询02_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.205" critical="yes" starttime="20171028 20:37:15.201">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t3" name="充电单vin查询03">
+<status status="FAIL" endtime="20171028 20:37:15.224" critical="yes" starttime="20171028 20:37:15.219">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t4" name="充电单vin查询04_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.236" critical="yes" starttime="20171028 20:37:15.230">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t5" name="充电单车牌查询05">
+<status status="FAIL" endtime="20171028 20:37:15.247" critical="yes" starttime="20171028 20:37:15.244">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t6" name="充电单车牌查询06_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.262" critical="yes" starttime="20171028 20:37:15.256">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t7" name="充电单公司查询07">
+<status status="FAIL" endtime="20171028 20:37:15.279" critical="yes" starttime="20171028 20:37:15.275">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t8" name="充电单公司查询08_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.295" critical="yes" starttime="20171028 20:37:15.289">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t9" name="充电单状态查询09">
+<status status="FAIL" endtime="20171028 20:37:15.316" critical="yes" starttime="20171028 20:37:15.311">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t10" name="充电单状态查询10">
+<status status="FAIL" endtime="20171028 20:37:15.329" critical="yes" starttime="20171028 20:37:15.325">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t11" name="充电单状态查询11">
+<status status="FAIL" endtime="20171028 20:37:15.343" critical="yes" starttime="20171028 20:37:15.338">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t12" name="充电单是否删除查询12">
+<status status="FAIL" endtime="20171028 20:37:15.353" critical="yes" starttime="20171028 20:37:15.348">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t13" name="充电单是否删除查询13">
+<status status="FAIL" endtime="20171028 20:37:15.365" critical="yes" starttime="20171028 20:37:15.360">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t14" name="充电网点查询14">
+<status status="FAIL" endtime="20171028 20:37:15.378" critical="yes" starttime="20171028 20:37:15.374">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t15" name="充电网点查询15">
+<status status="FAIL" endtime="20171028 20:37:15.389" critical="yes" starttime="20171028 20:37:15.386">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t16" name="充电桩公司查询16">
+<status status="FAIL" endtime="20171028 20:37:15.402" critical="yes" starttime="20171028 20:37:15.399">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t17" name="充电桩公司查询17_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.416" critical="yes" starttime="20171028 20:37:15.410">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t18" name="充电单跟进人查询18">
+<status status="FAIL" endtime="20171028 20:37:15.429" critical="yes" starttime="20171028 20:37:15.424">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t19" name="充电单跟进人查询19_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.444" critical="yes" starttime="20171028 20:37:15.437">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t20" name="创建时间查询20">
+<status status="FAIL" endtime="20171028 20:37:15.457" critical="yes" starttime="20171028 20:37:15.451">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t21" name="创建时间查询21_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.478" critical="yes" starttime="20171028 20:37:15.468">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t22" name="完成时间查询22">
+<status status="FAIL" endtime="20171028 20:37:15.498" critical="yes" starttime="20171028 20:37:15.487">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-s1-t23" name="完成时间查询23_查不到信息">
+<status status="FAIL" endtime="20171028 20:37:15.509" critical="yes" starttime="20171028 20:37:15.504">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<status status="FAIL" endtime="20171028 20:37:15.520" starttime="20171028 20:37:06.576">Suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</suite>
+<status status="FAIL" endtime="20171028 20:37:15.545" starttime="20171028 20:37:06.513"></status>
+</suite>
+<suite source="C:\classes\wj\yidu_web\web\tc\运维工单\调度单" id="s1-s1-s2" name="调度单">
+<suite source="C:\classes\wj\yidu_web\web\tc\运维工单\调度单\调度单.robot" id="s1-s1-s2-s1" name="调度单">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>clear</arg>
+<arg>dispatch_list</arg>
+<arg>AND</arg>
+<arg>clear</arg>
+<arg>dispatch_operate_log</arg>
+<arg>AND</arg>
+<arg>dd_insert</arg>
+<arg>1</arg>
+<arg>AND</arg>
+<arg>dd_insert</arg>
+<arg>2</arg>
+<arg>AND</arg>
+<arg>dd_insert</arg>
+<arg>3</arg>
+<arg>AND</arg>
+<arg>dd_insert</arg>
+<arg>4</arg>
+<arg>AND</arg>
+<arg>dd_modify</arg>
+<arg>1</arg>
+<arg>AND</arg>
+<arg>dd_delete</arg>
+<arg>2</arg>
+<arg>AND</arg>
+<arg>close</arg>
+<arg>AND</arg>
+<arg>ToDdMenu</arg>
+</arguments>
+<kw name="Clear" library="pylib.DataBase">
+<arguments>
+<arg>dispatch_list</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:15.684" starttime="20171028 20:37:15.605"></status>
+</kw>
+<kw name="Clear" library="pylib.DataBase">
+<arguments>
+<arg>dispatch_operate_log</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:15.713" starttime="20171028 20:37:15.684"></status>
+</kw>
+<kw name="Dd Insert" library="pylib.DataBase">
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20171028 20:37:16.412" level="INFO">{u'status': 0, u'msg': u'\u521b\u5efa\u6210\u529f', u'data': {u'dispatchId': u'1'}}</msg>
+<status status="PASS" endtime="20171028 20:37:16.412" starttime="20171028 20:37:15.714"></status>
+</kw>
+<kw name="Dd Insert" library="pylib.DataBase">
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20171028 20:37:17.100" level="INFO">{u'status': 0, u'msg': u'\u521b\u5efa\u6210\u529f', u'data': {u'dispatchId': u'2'}}</msg>
+<status status="PASS" endtime="20171028 20:37:17.100" starttime="20171028 20:37:16.413"></status>
+</kw>
+<kw name="Dd Insert" library="pylib.DataBase">
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20171028 20:37:17.780" level="INFO">{u'status': 0, u'msg': u'\u521b\u5efa\u6210\u529f', u'data': {u'dispatchId': u'3'}}</msg>
+<status status="PASS" endtime="20171028 20:37:17.780" starttime="20171028 20:37:17.100"></status>
+</kw>
+<kw name="Dd Insert" library="pylib.DataBase">
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20171028 20:37:18.535" level="INFO">{u'status': 0, u'msg': u'\u521b\u5efa\u6210\u529f', u'data': {u'dispatchId': u'4'}}</msg>
+<status status="PASS" endtime="20171028 20:37:18.536" starttime="20171028 20:37:17.780"></status>
+</kw>
+<kw name="Dd Modify" library="pylib.DataBase">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:19.388" starttime="20171028 20:37:18.537"></status>
+</kw>
+<kw name="Dd Delete" library="pylib.DataBase">
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20171028 20:37:19.768" starttime="20171028 20:37:19.388"></status>
+</kw>
+<kw name="Close" library="pylib.DataBase">
+<status status="PASS" endtime="20171028 20:37:19.772" starttime="20171028 20:37:19.769"></status>
+</kw>
+<kw name="To Dd Menu" library="pylib.WebOp">
+<msg timestamp="20171028 20:37:23.835" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</msg>
+<status status="FAIL" endtime="20171028 20:37:23.835" starttime="20171028 20:37:19.772"></status>
+</kw>
+<status status="FAIL" endtime="20171028 20:37:23.836" starttime="20171028 20:37:15.602"></status>
+</kw>
+<test id="s1-s1-s2-s1-t1" name="调度单号查询_查到信息dd001">
+<status status="FAIL" endtime="20171028 20:37:23.842" critical="yes" starttime="20171028 20:37:23.836">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t2" name="调度单号查询_查不到信息dd001">
+<status status="FAIL" endtime="20171028 20:37:23.855" critical="yes" starttime="20171028 20:37:23.850">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t3" name="公司查询_查到信息一度用车dd002">
+<status status="FAIL" endtime="20171028 20:37:23.869" critical="yes" starttime="20171028 20:37:23.863">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t4" name="公司查询_查不到信息广州一度dd002">
+<status status="FAIL" endtime="20171028 20:37:23.883" critical="yes" starttime="20171028 20:37:23.877">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t5" name="vin号查询_查到信息dd003">
+<status status="FAIL" endtime="20171028 20:37:23.894" critical="yes" starttime="20171028 20:37:23.890">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t6" name="vin号查询_查不到信息dd003">
+<status status="FAIL" endtime="20171028 20:37:23.907" critical="yes" starttime="20171028 20:37:23.901">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t7" name="车牌查询_查到信息dd004">
+<status status="FAIL" endtime="20171028 20:37:23.917" critical="yes" starttime="20171028 20:37:23.912">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t8" name="车牌查询_查不到信息dd004">
+<status status="FAIL" endtime="20171028 20:37:23.930" critical="yes" starttime="20171028 20:37:23.926">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t9" name="工单状态查询_调度中dd005">
+<status status="FAIL" endtime="20171028 20:37:23.943" critical="yes" starttime="20171028 20:37:23.937">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t10" name="工单状态查询_已完成dd005">
+<status status="FAIL" endtime="20171028 20:37:23.957" critical="yes" starttime="20171028 20:37:23.952">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t11" name="跟进人查询_查到信息dd006">
+<status status="FAIL" endtime="20171028 20:37:23.970" critical="yes" starttime="20171028 20:37:23.965">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t12" name="跟进人查询_查不到信息dd006">
+<status status="FAIL" endtime="20171028 20:37:23.984" critical="yes" starttime="20171028 20:37:23.979">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t13" name="创建时间查询_查到信息dd007">
+<status status="FAIL" endtime="20171028 20:37:23.997" critical="yes" starttime="20171028 20:37:23.992">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t14" name="创建时间查询_查不到信息dd007">
+<status status="FAIL" endtime="20171028 20:37:24.009" critical="yes" starttime="20171028 20:37:24.004">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t15" name="完成时间查询_查到信息dd008">
+<status status="FAIL" endtime="20171028 20:37:24.022" critical="yes" starttime="20171028 20:37:24.016">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t16" name="完成时间查询_查不到信息dd008">
+<status status="FAIL" endtime="20171028 20:37:24.036" critical="yes" starttime="20171028 20:37:24.030">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t17" name="工单删除状态查询_是dd009">
+<status status="FAIL" endtime="20171028 20:37:24.046" critical="yes" starttime="20171028 20:37:24.041">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t18" name="工单删除状态查询_否dd009">
+<status status="FAIL" endtime="20171028 20:37:24.058" critical="yes" starttime="20171028 20:37:24.053">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<test id="s1-s1-s2-s1-t19" name="工单删除状态查询_全部dd009">
+<status status="FAIL" endtime="20171028 20:37:24.071" critical="yes" starttime="20171028 20:37:24.065">Parent suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<status status="FAIL" endtime="20171028 20:37:24.081" starttime="20171028 20:37:15.577">Suite setup failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=58.0.3029.81)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</suite>
+<status status="FAIL" endtime="20171028 20:37:24.097" starttime="20171028 20:37:15.563"></status>
+</suite>
+<status status="FAIL" endtime="20171028 20:37:24.115" starttime="20171028 20:36:51.817"></status>
+</suite>
+<kw type="teardown" name="Close Browser" library="pylib.WebOp">
+<status status="PASS" endtime="20171028 20:37:27.171" starttime="20171028 20:37:24.140"></status>
+</kw>
+<status status="FAIL" endtime="20171028 20:37:27.172" starttime="20171028 20:36:46.406"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="42" pass="0">Critical Tests</stat>
+<stat fail="42" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="42" id="s1" name="Tc" pass="0">Tc</stat>
+<stat fail="42" id="s1-s1" name="运维工单" pass="0">Tc.运维工单</stat>
+<stat fail="23" id="s1-s1-s1" name="充电单" pass="0">Tc.运维工单.充电单</stat>
+<stat fail="23" id="s1-s1-s1-s1" name="充电单" pass="0">Tc.运维工单.充电单.充电单</stat>
+<stat fail="19" id="s1-s1-s2" name="调度单" pass="0">Tc.运维工单.调度单</stat>
+<stat fail="19" id="s1-s1-s2-s1" name="调度单" pass="0">Tc.运维工单.调度单.调度单</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171108 14:37:41.564" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\wj\project\admin\tc" id="s1" name="Tc">
+<kw type="setup" name="OpenBrowser">
+<arguments>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171108 14:37:41.619" level="FAIL">No keyword with name 'OpenBrowser' found.</msg>
+<status status="FAIL" endtime="20171108 14:37:41.619" starttime="20171108 14:37:41.619"></status>
+</kw>
+<suite source="D:\wj\project\admin\tc\tc1.robot" id="s1-s1" name="Tc1">
+<test id="s1-s1-t1" name="登录">
+<status status="FAIL" endtime="20171108 14:37:41.622" critical="yes" starttime="20171108 14:37:41.621">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</test>
+<status status="FAIL" endtime="20171108 14:37:41.625" starttime="20171108 14:37:41.620">Parent suite setup failed:
+No keyword with name 'OpenBrowser' found.</status>
+</suite>
+<kw type="teardown" name="CloseBrowser">
+<msg timestamp="20171108 14:37:41.632" level="FAIL">No keyword with name 'CloseBrowser' found.</msg>
+<status status="FAIL" endtime="20171108 14:37:41.632" starttime="20171108 14:37:41.632">No keyword with name 'CloseBrowser' found.</status>
+</kw>
+<status status="FAIL" endtime="20171108 14:37:41.632" starttime="20171108 14:37:41.568">Suite setup failed:
+No keyword with name 'OpenBrowser' found.
+
+Also suite teardown failed:
+No keyword with name 'CloseBrowser' found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Tc" pass="0">Tc</stat>
+<stat fail="1" id="s1-s1" name="Tc1" pass="0">Tc.Tc1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20171108 14:37:41.611" level="ERROR">Error in file 'D:\wj\project\admin\tc': Importing test library 'pylib.WebOp' failed: ImportError: No module named pylib
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\wj\project\admin
+  C:\Windows\system32\python27.zip
+  c:\python27\DLLs
+  c:\python27\lib
+  c:\python27\lib\plat-win
+  c:\python27\lib\lib-tk
+  c:\python27
+  c:\python27\lib\site-packages
+  c:\python27\lib\site-packages\wx-2.8-msw-unicode</msg>
+</errors>
+</robot>
